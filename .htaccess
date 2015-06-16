@@ -1,0 +1,154 @@
+
+<IfModule mod_headers.c>
+	Header add Access-Control-Allow-Origin "*"
+	Header add Access-Control-Allow-Headers "origin, x-requested-with, content-type"
+	Header add Access-Control-Allow-Methods "GET, POST, DELETE, OPTIONS"
+</IfModule>
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} !^www.trydreamfields.com$ [NC]
+RewriteRule ^(.*)$ http://www.trydreamfields.com/$1 [L,R=301]
+
+redirect 301 /Pastapalooza http://www.trydreamfields.com/pastapalooza
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Redirects for current Contest - 02/023/2015                                 -
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+redirect 301 /Contest http://www.trydreamfields.com/LittleBlackBox_2015
+redirect 301 /contest http://www.trydreamfields.com/LittleBlackBox_2015
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Redirects for retired landers (Taken live on 08/07/2014)                    -
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+redirect 301 /diabetesdaily/ http://www.trydreamfields.com/
+redirect 301 /dlife/ http://www.trydreamfields.com/
+redirect 301 /eatingwell/ http://www.trydreamfields.com/
+#####redirect 301 /facebook/ http://www.trydreamfields.com/
+redirect 301 /forecast/ http://www.trydreamfields.com/
+redirect 301 /healthyflavors/ http://www.trydreamfields.com/
+redirect 301 /linkwell/ http://www.trydreamfields.com/
+redirect 301 /taste/ http://www.trydreamfields.com/
+redirect 301 /twitter/ http://www.trydreamfields.com/
+redirect 301 /walmart/ http://www.trydreamfields.com/
+redirect 301 /yahoohealth/ http://www.trydreamfields.com/
+redirect 301 /thanks-signup.html http://www.trydreamfields.com/thanks-signup.php
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Redirects for retired landers (Taken live on 02/20/2014)                    -
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+redirect 301 /2/ http://www.trydreamfields.com/learn/
+redirect 301 /3/ http://www.trydreamfields.com/
+redirect 301 /4/ http://www.trydreamfields.com/
+redirect 301 /5/ http://www.trydreamfields.com/learn/
+redirect 301 /6/ http://www.trydreamfields.com/
+redirect 301 /7/ http://www.trydreamfields.com/learn/
+redirect 301 /10/ http://www.trydreamfields.com/learn/
+redirect 301 /11/ http://www.trydreamfields.com/
+redirect 301 /12/ http://www.trydreamfields.com/learn/
+redirect 301 /13/ http://www.trydreamfields.com/learn/
+redirect 301 /14/ http://www.trydreamfields.com/learn/
+redirect 301 /15/ http://www.trydreamfields.com/learn/
+redirect 301 /17/ http://www.trydreamfields.com/
+redirect 301 /18/ http://www.trydreamfields.com/learn/
+redirect 301 /19/ http://www.trydreamfields.com/learn/
+redirect 301 /20/ http://www.trydreamfields.com/
+redirect 301 /21/ http://www.trydreamfields.com/learn/
+redirect 301 /22/ http://www.trydreamfields.com/learn/
+redirect 301 /23/ http://www.trydreamfields.com/
+redirect 301 /24/ http://www.trydreamfields.com/learn/
+redirect 301 /25/ http://www.trydreamfields.com/learn/
+redirect 301 /26/ http://www.trydreamfields.com/
+redirect 301 /27/ http://www.trydreamfields.com/learn/
+redirect 301 /best/ http://www.trydreamfields.com/learn/
+redirect 301 /buzz/ http://www.trydreamfields.com/
+redirect 301 /cabot/ http://www.trydreamfields.com/
+redirect 301 /connect/ http://www.trydreamfields.com/
+redirect 301 /dailybuzz2/ http://www.trydreamfields.com/
+redirect 301 /diabeteshealth/ http://www.trydreamfields.com/
+redirect 301 /diabeticliving/ http://www.trydreamfields.com/
+redirect 301 /easysolutions/ http://www.trydreamfields.com/learn/
+#redirect 301 /email_onboard/ http://www.trydreamfields.com/
+redirect 301 /goodhousekeeping/ http://www.trydreamfields.com/
+redirect 301 /gdn/ http://www.trydreamfields.com/
+redirect 301 /gourmet/ http://www.trydreamfields.com/
+redirect 301 /grt/ http://www.trydreamfields.com/
+redirect 301 /guideposts/ http://www.trydreamfields.com/
+redirect 301 /healthyoutcomes/ http://www.trydreamfields.com/
+redirect 301 /hometest/ http://www.trydreamfields.com/
+redirect 301 /living/ http://www.trydreamfields.com/learn/
+redirect 301 /lowcarb/ http://www.trydreamfields.com/
+redirect 301 /lw/ http://www.trydreamfields.com/learn/
+redirect 301 /military/ http://www.trydreamfields.com/
+redirect 301 /pastasalad/ http://www.trydreamfields.com/
+redirect 301 /postcard/ http://www.trydreamfields.com/
+redirect 301 /rd411/ http://www.trydreamfields.com/learn/
+redirect 301 /recipe/ http://www.trydreamfields.com/learn/
+redirect 301 /straighttalk/ http://www.trydreamfields.com/
+redirect 301 /tnt/ http://www.trydreamfields.com/
+redirect 301 /video/ http://www.trydreamfields.com/learn/
+redirect 301 /womansday/ http://www.trydreamfields.com/
+
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Redirects for retired landers (Taken live on 10/04/2013)                    -
+# A few were commented out on 02/20/2014, since Megan had new redirects above -
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+redirect 301 /1/ http://www.trydreamfields.com/
+redirect 301 /8/ http://www.trydreamfields.com/
+redirect 301 /9/ http://www.trydreamfields.com/
+#redirect 301 /26/ http://www.trydreamfields.com/
+redirect 301 /28/ http://www.trydreamfields.com/
+redirect 301 /29/ http://www.trydreamfields.com/
+#redirect 301 /best/ http://www.trydreamfields.com/
+redirect 301 /curves/ http://www.trydreamfields.com/
+redirect 301 /dff/ http://www.trydreamfields.com/
+#redirect 301 /easysolutions/ http://www.trydreamfields.com/
+redirect 301 /fitplus/ http://www.trydreamfields.com/
+redirect 301 /friends/ http://www.trydreamfields.com/
+redirect 301 /Goodhousetablet/ http://www.trydreamfields.com/
+#redirect 301 /healthyoutcomes/ http://www.trydreamfields.com/
+redirect 301 /hm/ http://www.trydreamfields.com/
+redirect 301 /JimmyMoore/ http://www.trydreamfields.com/
+redirect 301 /lifestyle/ http://www.trydreamfields.com/
+#redirect 301 /military/ http://www.trydreamfields.com/
+redirect 301 /mrfood/ http://www.trydreamfields.com/
+redirect 301 /nourish/ http://www.trydreamfields.com/
+redirect 301 /painsolutions/ http://www.trydreamfields.com/
+redirect 301 /pasta/ http://www.trydreamfields.com/
+redirect 301 /pc/ http://www.trydreamfields.com/
+redirect 301 /pcos/ http://www.trydreamfields.com/
+#redirect 301 /postcard/ http://www.trydreamfields.com/
+redirect 301 /prevention/ http://www.trydreamfields.com/
+redirect 301 /Qupio/ http://www.trydreamfields.com/
+redirect 301 /readersdigest/ http://www.trydreamfields.com/
+redirect 301 /redners/ http://www.trydreamfields.com/
+redirect 301 /shoprite/ http://www.trydreamfields.com/
+redirect 301 /splenda/ http://www.trydreamfields.com/
+redirect 301 /tampa/ http://www.trydreamfields.com/
+redirect 301 /TC/ http://www.trydreamfields.com/
+redirect 301 /vsw/ http://www.trydreamfields.com/
+redirect 301 /weightwatchers/ http://www.trydreamfields.com/
+redirect 301 /womenshealth/ http://www.trydreamfields.com/
+
+
+
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Redirects for JimmyMoore lander (various spellings)                         -
+# (Taken live on 07/21/2009)                                                  -
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+redirect 301 /jimmymoore/ http://www.trydreamfields.com/JimmyMoore/
+redirect 301 /jimmymoore http://www.trydreamfields.com/JimmyMoore/
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Redirects for new landers, in case people capitalize letters                -
+# (Taken live on 02/02/2009)                                                  -
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+redirect 301 /HealthyOutcomes http://www.trydreamfields.com/healthyoutcomes
+redirect 301 /HealthyOutcomes/index.html http://www.trydreamfields.com/healthyoutcomes
+redirect 301 /WomensHealth http://www.trydreamfields.com/womenshealth
+redirect 301 /WomensHealth/index.html http://www.trydreamfields.com/womenshealth
+
+ErrorDocument 404 http://www.trydreamfields.com/
+AddType image/x-icon .ico

@@ -1,0 +1,382 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Dreamfields Pasta welcomes Good Housekeeping guests</title>
+<link href="../css/main_drm144healthy.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../jscripts/swfobject.js"></script>
+<script src="../jscripts/jquery-1.2.6.min.js" type="text/javascript"></script>
+<script src="../jscripts/popup.js" type="text/javascript"></script>
+<script language="Javascript" type="text/javascript">
+<!--
+
+function clearText(thefield){
+if (thefield.value=="Enter Your Email Address.")
+thefield.value = ""
+}
+
+function redoText(thefield){
+if ((thefield.value=="Enter Your Email Address.") || (thefield.value == ""))
+thefield.value = "Enter Your Email Address."
+}
+
+function clearZip(thefield){
+if (thefield.value=="Enter Your Zip Code.")
+thefield.value = ""
+}
+
+function redoZip(thefield){
+if ((thefield.value=="Enter Your Zip Code.") || (thefield.value == ""))
+thefield.value = "Enter Your Zip Code."
+} 
+
+// non-empty Full Name
+function isEmptyFullName(strng) {
+var error = "";
+  if (strng.length == 0) {
+     error = "Please fill in your Full Name.\n"
+  }
+return error;
+}
+
+// Zip Code
+function checkZip (strng) {
+var error="";
+  if (strng == "" || strng == "Enter Your Zip Code.") {
+     error = "You didn't enter a Zip Code.\n";
+  } 
+return error;
+}
+
+// email
+function checkEmail (strng) {
+var error="";
+  if (strng == "") {
+     error = "You didn't enter an Email Address.\n";
+  } else {
+    var emailFilter=/^.+@.+\..{2,3}$/;
+    if (!(emailFilter.test(strng))) {
+       error = "Please enter a valid Email Address.\n";
+    } else {
+      //test email for illegal characters
+      var illegalChars= /[\(\)\<\>\,\;\:\\\"\[\]]/
+      if (strng.match(illegalChars)) {
+         error = "The Email Address contains illegal characters.\n";
+      }
+    }
+  }
+return error;
+}
+
+function checkWholeForm() {
+    var why = "";
+	//why += isEmptyFullName(document.subscribeForm.elements['Full Name'].value);
+	why += checkEmail(document.subscribeForm.elements['email'].value);
+	why += checkZip(document.subscribeForm.elements['zip'].value);
+	if (why != "") {
+       alert(why);
+       return false;
+    } else {
+		document.getElementById("optout").value = String(document.getElementById("unsubChk").checked);
+		return true;
+	}
+	return false;
+}
+
+function MM_popupMsg(msg) { //v1.0
+  alert(msg);
+}
+
+				$(document).ready(function() {
+					fadeLevel = 1.0;
+					fadeLevelB = 0.3;
+					$("#recipe1wrap").bind("mouseenter",function() {
+											if(typeof(recipe_timer1) !== 'undefined') {
+												clearTimeout(recipe_timer1);
+												clearTimeout(recipe_timer1b);
+												recipe_timer1 = undefined;
+												recipe_timer1b = undefined;
+											} else {
+												$("#recipe1 > #bg").css("opacity",0).css("visibility","visible").fadeTo("normal", fadeLevelB);	
+												$("#recipe1 > #text").css("opacity",0).css("visibility","visible").fadeTo("normal", fadeLevel);	
+											}
+										}).bind("mouseleave",function() {
+												recipe_timer1b = setTimeout("$('#recipe1 > #bg').fadeTo('normal', 0).css('visibility', 'hidden'); clearTimeout(recipe_timer1b); recipe_timer1b = undefined;", 300);
+												recipe_timer1 = setTimeout("$('#recipe1 > #text').fadeTo('normal', 0).css('visibility', 'hidden'); clearTimeout(recipe_timer1); recipe_timer1 = undefined;", 300);
+										});
+					$("#recipe1").bind("mouseenter", function(){
+											clearTimeout(recipe_timer1);
+											clearTimeout(recipe_timer1b);
+											recipe_timer1 = undefined;
+											recipe_timer1b = undefined;
+											$("#recipe1wrap").unbind("mouseleave");
+									}).bind("mouseleave", function() {
+										recipe_timer1b = setTimeout("$('#recipe1 > #bg').fadeTo('normal', 0).css('visibility', 'hidden'); clearTimeout(recipe_timer1b); recipe_timer1b = undefined;", 300);
+										recipe_timer1 = setTimeout("$('#recipe1 > #text').fadeTo('normal', 0).css('visibility', 'hidden'); clearTimeout(recipe_timer1); recipe_timer1 = undefined;", 300);
+										$("#recipe1wrap").bind("mouseleave", function() {
+												recipe_timer1b = setTimeout("$('#recipe1 > #bg').fadeTo('normal', 0).css('visibility', 'hidden'); clearTimeout(recipe_timer1b); recipe_timer1b = undefined;", 300);
+												recipe_timer1 = setTimeout("$('#recipe1 > #text').fadeTo('normal', 0).css('visibility', 'hidden'); clearTimeout(recipe_timer1); recipe_timer1 = undefined;", 300);
+										});
+					});
+					
+					$("#recipe2wrap").bind("mouseenter",function() {
+											if(typeof(recipe_timer2) !== 'undefined') {
+												clearTimeout(recipe_timer2);
+												clearTimeout(recipe_timer2b);
+												recipe_timer2 = undefined;
+												recipe_timer2b = undefined;
+											} else {
+												$("#recipe2 > #bg").css("opacity",0).css("visibility","visible").fadeTo("normal", fadeLevelB);	
+												$("#recipe2 > #text").css("opacity",0).css("visibility","visible").fadeTo("normal", fadeLevel);	
+											}
+										}).bind("mouseleave",function() {
+												recipe_timer2b = setTimeout("$('#recipe2 > #bg').fadeTo('normal', 0).css('visibility', 'hidden'); clearTimeout(recipe_timer2b); recipe_timer2b = undefined;", 300);
+												recipe_timer2 = setTimeout("$('#recipe2 > #text').fadeTo('normal', 0).css('visibility', 'hidden'); clearTimeout(recipe_timer2); recipe_timer2 = undefined;", 300);
+										});
+					$("#recipe2").bind("mouseenter", function(){
+											clearTimeout(recipe_timer2);
+											clearTimeout(recipe_timer2b);
+											recipe_timer2 = undefined;
+											recipe_timer2b = undefined;
+											$("#recipe2wrap").unbind("mouseleave");
+									}).bind("mouseleave", function() {
+										recipe_timer2b = setTimeout("$('#recipe2 > #bg').fadeTo('normal', 0).css('visibility', 'hidden'); clearTimeout(recipe_timer2b); recipe_timer2b = undefined;", 300);
+										recipe_timer2 = setTimeout("$('#recipe2 > #text').fadeTo('normal', 0).css('visibility', 'hidden'); clearTimeout(recipe_timer2); recipe_timer2 = undefined;", 300);
+										$("#recipe2wrap").bind("mouseleave", function() {
+												recipe_timer2b = setTimeout("$('#recipe2 > #bg').fadeTo('normal', 0).css('visibility', 'hidden'); clearTimeout(recipe_timer2b); recipe_timer2b = undefined;", 300);
+												recipe_timer2 = setTimeout("$('#recipe2 > #text').fadeTo('normal', 0).css('visibility', 'hidden'); clearTimeout(recipe_timer2); recipe_timer2 = undefined;", 300);
+										});
+					});
+					
+					$("#recipe3wrap").bind("mouseenter",function() {
+											if(typeof(recipe_timer3) !== 'undefined') {
+												clearTimeout(recipe_timer3);
+												clearTimeout(recipe_timer3b);
+												recipe_timer3 = undefined;
+												recipe_timer3b = undefined;
+											} else {
+												$("#recipe3 > #bg").css("opacity",0).css("visibility","visible").fadeTo("normal", fadeLevelB);	
+												$("#recipe3 > #text").css("opacity",0).css("visibility","visible").fadeTo("normal", fadeLevel);	
+											}
+										}).bind("mouseleave",function() {
+												recipe_timer3b = setTimeout("$('#recipe3 > #bg').fadeTo('normal', 0).css('visibility', 'hidden'); clearTimeout(recipe_timer3b); recipe_timer3b = undefined;", 300);
+												recipe_timer3 = setTimeout("$('#recipe3 > #text').fadeTo('normal', 0).css('visibility', 'hidden'); clearTimeout(recipe_timer3); recipe_timer3 = undefined;", 300);
+										});
+					$("#recipe3").bind("mouseenter", function(){
+											clearTimeout(recipe_timer3);
+											clearTimeout(recipe_timer3b);
+											recipe_timer3 = undefined;
+											recipe_timer3b = undefined;
+											$("#recipe3wrap").unbind("mouseleave");
+									}).bind("mouseleave", function() {
+										recipe_timer3b = setTimeout("$('#recipe3 > #bg').fadeTo('normal', 0).css('visibility', 'hidden'); clearTimeout(recipe_timer3b); recipe_timer3b = undefined;", 300);
+										recipe_timer3 = setTimeout("$('#recipe3 > #text').fadeTo('normal', 0).css('visibility', 'hidden'); clearTimeout(recipe_timer3); recipe_timer3 = undefined;", 300);
+										$("#recipe3wrap").bind("mouseleave", function() {
+												recipe_timer3b = setTimeout("$('#recipe3 > #bg').fadeTo('normal', 0).css('visibility', 'hidden'); clearTimeout(recipe_timer3b); recipe_timer3b = undefined;", 300);
+												recipe_timer3 = setTimeout("$('#recipe3 > #text').fadeTo('normal', 0).css('visibility', 'hidden'); clearTimeout(recipe_timer3); recipe_timer3 = undefined;", 300);
+										});
+					});
+});	
+//-->
+</script>
+</head>
+<body>
+<a name="toTheTop"></a>
+<div id="backgroundPopup"></div>
+<div id="popupContact"><a id="popupContactClose">x</a> <img src="../images/chart_servingSize_v01.gif" width="267" height="249" border="0"></div>
+<div id="wrap">
+  <div id="header">
+    <div id="row01"><img src="../images/drm144_hdr_YouMustBe.gif" alt="You Must Be Dreaming - A Pasta with Low Carbs, High Fiber &amp; Real Taste?" width="766" height="49"></div>
+    <div id="row02">
+      <div id="left"><img src="../images/drm144_hdr_pho_mac.jpg" alt="You Must Be Dreaming - A Pasta with Low Carbs, High Fiber &amp; Real Taste?" width="383" height="254"></div>
+      <div id="right"><img src="../images/drm144_hdr_TryDrm.jpg" alt="Try Dreamfields As Part Of Your Healthy Diet!" width="383" height="108"><br>
+        <img src="../images/drm144_hdr_5g.jpg" alt="- 5g Digestible Carbs per Serving - 5g of Fiber, Similar to Whole Wheat Pasta - Delicious, Traditional Pasta Taste" width="383" height="146"> </div>
+      <div class="clear">
+        <!-- clear -->
+      </div>
+    </div>
+    <div id="row03">
+      <form action="../lander_proxy_withZipNEW.php" name="subscribeForm" id="subscribeForm" method="POST" onSubmit="return checkWholeForm();" style="margin:0; padding:0;">
+        <!-- (2010/10/04 ... my lists / 2010_Landing_Pages / GoodHousekeeping -->
+        <input type="hidden" name="MID" value="13846" />
+        <input type="hidden" name="lid" value="16996444" />
+  		<!-- Use the correct Thanks and Error pages below (use absolute URLs, with the domain name) -->
+ 		<input type="hidden" name="thx" value="http://www.trydreamfields.com/staged/coupon-thanks-1GH.php" />
+  		<input type="hidden" name="err" value="http://www.dreamfieldsfoods.com/error.html" />
+  		<!-- Leave the SubAction alone -->
+  		<input type="hidden" name="SubAction" value="sub_add_update" />
+        <!-- Source / Group-->
+        <input type="hidden" name="source" value="GH_lander">
+        <input type="hidden" name="group" value="Eat Healthier">
+        <!-- welcome email is set up on subscriber list, so don't send triggered email -->
+        <input type="hidden" name="trigger" value="no">
+        <input type="hidden" name="optout" id="optout" value="false">
+        <div id="left">
+          <input name="submit" type="image" style="margin:0 0 0 0; outline:none;" value="SUBMIT" src="../images/drm144_hdr_bannerCoupon.jpg" alt="Get $1.00 Off any box of Dreamfields Pasta">
+        </div>
+        <div id="right">
+          <div id="form">
+            <table width="310" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="15" align="left" valign="top"><img src="../images/spacer.gif" alt="" width="1" height="55" border="0" style="display:block;"></td>
+                <td width="295" align="left" valign="top"><input name="email" type="text" id="email" size="30" class="txtBoxStyle1" value="Enter Your Email Address." style="width:176px; margin:0px 0 0 0;" onFocus="clearText(this)" onBlur="redoText(this)">
+                  <input name="zip" type="text" id="zip" size="30" class="txtBoxStyle1" value="Enter Your Zip Code." style="width:176px; margin:6px 0 0 0;" onFocus="clearZip(this)" onBlur="redoZip(this)"></td>
+              </tr>
+              <tr>
+                <td width="15" align="left" valign="top"><img src="../images/spacer.gif" width="11" height="107"></td>
+                <td width="295" align="left" valign="top"><table width="295" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td width="25" align="left" valign="top"><input type="checkbox" name="unsubChk" id="unsubChk" value="false"></td>
+                      <td width="270" align="left" valign="top"><img src="../images/spacer.gif" width="1" height="3"><br>
+                        <strong>Opt-out of future emails <br>
+                        from Dreamfields.</strong>
+                        <div id="privacyPolicy"><a href="http://www.dreamfieldsfoods.com/privacy-policy.html" target="_blank">Privacy
+                            Policy</a></div></td>
+                    </tr>
+                    <tr>
+                      <td width="270" align="left" valign="top" colspan="2"><img src="../images/spacer.gif" width="1" height="3"><br>
+                        <img src="../images/spacer.gif" width="1" height="5"></td>
+                    </tr>
+                    <tr>
+                      <td width="270" align="left" valign="top" colspan="2"><input name="submit" type="image" style="margin:0 0 0 0; outline:none;" value="SUBMIT" src="../images/drm144_btn_PrintCoupon.jpg" alt="Print My Coupon!"></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table>
+          </div>
+          <div id="goldBar"><img src="../images/drm144_hdr_goldBar.gif" alt="- 5g Digestible Carbs per Serving - 5g of Fiber, Similar to Whole Wheat Pasta - Delicious, Traditional Pasta Taste" width="345" height="52"></div>
+        </div>
+        <div class="clear">
+          <!-- clear -->
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="bodyArea">
+    <div id="row01">
+      <div id="hd01"><img src="../images/drm144_hd_LowCarb.gif" alt="Low-Carb Dieters Can Eat Pasta Again" width="257" height="64" border="0"></div>
+      <div id="hd02"><img src="../images/drm144_hd_Healthy.gif" alt="Healthy Eaters Enjoy The Benefits of High Fiber" width="244" height="64" border="0"></div>
+      <div id="hd03"><img src="../images/drm144_hd_Traditional.gif" alt="Traditional Pasta Taste Your Whole Family Will Love" width="263" height="64" border="0"></div>
+      <div class="clear">
+        <!-- clear -->
+      </div>
+    </div>
+    <div id="row02">
+      <div id="rec01">
+        <div id="recipe1wrap"><a href="http://www.dreamfieldsfoods.com/healthy-pasta-recipes/2009/05/chicken-puttanesca-with-spaghetti.html"><img src="../images/drm144_pho_SpaghettiPuttanesca.jpg" alt="Chicken Puttanesca with Spaghetti" width="236" height="156" border="0"></a></div>
+        <div id="recipe1">
+          <div id="text" class="recipe_layerText">
+            <div align="center"><a href="http://www.dreamfieldsfoods.com/healthy-pasta-recipes/2009/05/chicken-puttanesca-with-spaghetti.html">Chicken
+                Puttanesca with Spaghetti&nbsp;</a></div>
+          </div>
+          <div id="bg" class="recipe_layer"></div>
+        </div>
+      </div>
+      <!-- end recipe 1 -->
+      <div id="rec02">
+        <div id="recipe2wrap"><a href="http://www.dreamfieldsfoods.com/healthy-pasta-recipes/2008/08/penne-and-chicken-with-garlic-cream.html"><img src="../images/drm144_pho_PenneGarlicCream.jpg" alt="Penne &amp; Chicken with Garlic Cream Sauce" width="236" height="156" border="0"></a></div>
+        <div id="recipe2">
+          <div id="text" class="recipe_layerText">
+            <div align="center"><a href="http://www.dreamfieldsfoods.com/healthy-pasta-recipes/2008/08/penne-and-chicken-with-garlic-cream.html">Penne &amp; Chicken
+                with Garlic Cream Sauce&nbsp;</a></div>
+          </div>
+          <div id="bg" class="recipe_layer"></div>
+        </div>
+      </div>
+      <!-- end recipe 2 -->
+      <div id="rec03">
+        <div id="recipe3wrap"><a href="http://www.dreamfieldsfoods.com/healthy-pasta-recipes/2008/08/easy-clam-linguine.html"><img src="../images/drm144_pho_EasyClamLinguine.jpg" alt="Easy Clam Linguine" width="236" height="156" border="0"></a></div>
+        <div id="recipe3">
+          <div id="text" class="recipe_layerText">
+            <div align="center"><a href="http://www.dreamfieldsfoods.com/healthy-pasta-recipes/2008/08/easy-clam-linguine.html">Easy
+                Clam Linguine&nbsp;</a></div>
+          </div>
+          <div id="bg" class="recipe_layer"></div>
+        </div>
+      </div>
+      <!-- end recipe 3 -->
+      <div class="clear">
+        <!-- clear -->
+      </div>
+    </div>
+    <div id="row03">
+      <div id="bar01">With only <a href="http://www.dreamfieldsfoods.com/pasta-nutrition.html#sec1q2">5g
+          of digestible carbs</a> per serving*, you can enjoy the delicious taste and al dente texture
+          of traditional pasta.</div>
+      <div id="bar02">Dreamfields has <a href="http://www.dreamfieldsfoods.com/high-fiber.html">5
+          grams of fiber</a> per serving*, similar to whole wheat pasta, to help you feel fuller longer.</div>
+      <div id="bar03">Make your favorite <a href="http://www.dreamfieldsfoods.com/healthy-pasta-recipes.html">pasta
+          recipes</a> healthier with Dreamfields, plus enjoy the same real taste and texture of traditional
+          pasta.</div>
+      <div class="clear">
+        <!-- clear -->
+      </div>
+    </div>
+    <div id="row04">
+      <div id="btn01"><a href="http://www.dreamfieldsfoods.com/healthy-pasta-recipes.html"><img src="../images/drm144_btn_TryMoreRecipes.gif" alt="Try More Recipes" width="242" height="37" border="0"></a></div>
+      <div id="btn02"><a href="http://www.dreamfieldsfoods.com/cooking-videos.html"><img src="../images/drm144_btn_WatchRecipeVideos.gif" alt="Watch Recipe Videos &gt;" width="282" height="37" border="0"></a></div>
+      <div class="clear">
+        <!-- clear -->
+      </div>
+    </div>
+    <div id="row05">
+      <div id="disclaimer"> Whether enjoying Dreamfields pasta or other foods, consumers with diabetes
+        must carefully monitor blood glucose and have frequent contact with their physician to maintain
+        good health. </div>
+      <div id="servingSizeLink">
+        <div id="button"><a href="#">View serving size information</a></div>
+      </div>
+      <div class="clear">
+        <!-- clear -->
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div id="row01"><img src="../images/drm144_ftr_WhereWould.gif" alt="Where Would You Like To Go Next?" width="766" height="23"></div>
+    <div id="row02">
+      <div id="btn01"><a href="#toTheTop"><img src="../images/drm144_ftr_btn_GetCoupon.gif" alt="Get Coupon" width="199" height="72" border="0"></a></div>
+      <div id="btn02"><a href="http://www.dreamfieldsfoods.com/find-dreamfields-pasta.html"><img src="../images/drm144_ftr_btn_FindAStore.gif" alt="Find A Store" width="185" height="72" border="0"></a></div>
+      <div id="btn03"><a href="http://www.buydreamfields.com/"><img src="../images/drm144_ftr_btn_BuyOnline.gif" alt="Buy Online" width="185" height="72" border="0"></a></div>
+      <div id="btn04"><a href="http://www.dreamfieldsfoods.com/pasta-nutrition.html"><img src="../images/drm144_ftr_btn_LearnMore.gif" alt="Learn More" width="197" height="72" border="0"></a></div>
+      <div class="clear">
+        <!-- clear -->
+      </div>
+    </div>
+    <div id="row03">
+      <div id="bar01"><a href="#"><img src="../images/drm144_ftr_bar_FindDrm.gif" alt="Find Dreamfields Pasta on" width="270" height="61" border="0"></a></div>
+      <div id="bar02"><a href="http://www.facebook.com/dreamfields" target="_blank"><img src="../images/drm144_ftr_bar_FB.gif" alt="Facebook" width="58" height="61" border="0"></a></div>
+      <div id="bar03"><a href="http://twitter.com/HealthyPasta" target="_blank"><img src="../images/drm144_ftr_bar_Tw.gif" alt="Twitter" width="54" height="61" border="0"></a></div>
+      <div id="bar04"><a href="http://www.youtube.com/user/DreamfieldsPasta" target="_blank"><img src="../images/drm144_ftr_bar_YT.gif" alt="YouTube" width="54" height="61" border="0"></a></div>
+      <div id="bar05">
+        <!--<a href="#"><img src="../images/drm144_ftr_bar_ST.gif" alt="Share Us With Your Friends!" width="238" height="61" border="0"></a>-->
+        <script type="text/javascript" src="http://w.sharethis.com/button/sharethis.js#publisher=f4078d11-0af1-4091-b34f-110f481e6e75&amp;type=website&amp;post_services=facebook%2Ctwitter%2Cdigg%2Cdelicious%2Cgoogle_bmarks%2Cblogger%2Clinkedin%2Cwindows_live%2Cybuzz%2Cnewsvine%2Cstumbleupon&amp;headerbg=%23002685&amp;linkfg=%23451210&amp;headerTitle=Share%20this%20page%20with%20a%20friend%3A&button=false&embeds=true"></script>
+        <script language="javascript" type="text/javascript">
+//Create your sharelet with desired properties and set button element to false
+var object = SHARETHIS.addEntry({
+title:'share',
+summary: 'Sharing is good for the soul.'},
+{offsetLeft: -20, offsetTop: -290},
+{embeds:true},
+{button:false});
+//Output your customized button
+document.write('<span id="share"><a href="javascript:void(0);"><img src="../images/drm144_ftr_bar_ST.gif" alt="Share Us With Your Friends!" width="238" height="61" border="0"></a></span>');
+//Tie customized button to ShareThis button functionality.
+var element = document.getElementById("share");
+object.attachButton(element);
+</script>
+      </div>
+      <div id="bar06"><a href="#"><img src="../images/drm144_ftr_bar_right.gif" alt="" width="92" height="61" border="0"></a></div>
+      <div class="clear">
+        <!-- clear -->
+      </div>
+    </div>
+  </div>
+</div>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2425619-1";
+urchinTracker();
+</script>
+</body>
+</html>

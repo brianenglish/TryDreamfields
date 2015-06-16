@@ -1,0 +1,817 @@
+
+@import "../lesshat";
+@import "../helpers";
+//@import "../elements";
+
+
+
+// MAIN STYLES
+// ============================================================
+
+	body.home .greenbox input[type="text"] {
+		.input(green);
+	}
+	
+	.outer_greenbox {
+		width: 100%;
+		height: auto;
+		float: none;
+		margin: 20px 0 0px 0;
+		padding: 0 20px;
+		
+		.form_disclaimer {
+			font-size: 11px; 
+			line-height: 14px;
+			padding: 10px 20px 0px 20px;
+			color: #ffffff;
+		}
+	}
+	
+	.greenbox {
+		margin: 0 0 10px 0;
+		padding-bottom: 20px;
+
+		h1 {
+			.clearfix;
+			position: relative;
+			margin: -7% 20px;
+			//margin: 20px;
+			z-index: 20;
+			color: @white;
+			.font-size(36);
+			.line-height(32);
+			text-align: center;
+		}
+		
+		img {
+			//display: none;
+			position: relative;
+			z-index: 10;
+			width: 100%;
+			height: auto;
+			max-width: 442px;
+			margin: 0 auto;
+		}
+	
+		#form {
+			margin: 10% 20px 0px 20px;
+			.clearfix;
+			
+			.clearMe {
+				.clearfix;
+			}
+			
+			div.unsubChk {
+				width: 20px;
+				margin: 0 0 0 0px;
+				float: left;
+				.clearfix;
+			}
+			.unsub_txt {
+				width: 85%;
+				float: left;
+				padding: 10px 0 0 0px;
+				color: @black;
+				font-weight: bold;
+				.font-size(15);
+				.line-height(18);
+				
+				& a {
+					color: @black;
+				}
+			}
+			
+			p {
+				color: @black;
+				font-weight: bold;
+				padding: 0 10px;
+			}
+		}
+		
+		.buttons {
+			.clearfix;
+			margin: 0 -10px;
+			padding: 0 10px;
+			
+			.btn1, .btn2 {
+				width: 100%;
+				float: none;
+				padding: 0 10px;
+			}
+			.btn1 {
+				margin-bottom: 20px;
+			}
+		}
+		
+		.div-email {
+			padding: 0 0px 10px;
+		}
+		.div-zip {
+			padding: 0 0px 20px;
+		}		
+	}		
+	
+	#hero {
+		img {
+			display: none;
+		}
+
+		a.hero-link {
+			display: block;
+			height: 222px;
+		}
+
+		height: 222px;
+		background: url("../../../_img/DRM080/DRM080_FB_hero_med.jpg") no-repeat left 0px;
+		background-size: 463px auto;
+
+		.kids & {
+			background: url("../../../_img/DRM080/DRM080_FB_Kids_hero_med.jpg") no-repeat left 0px;
+			background-size: 463px auto;
+		}
+	}
+
+	.ca_1 {
+		padding: 0 20px 30px 20px;
+		
+		.clearfix;
+		
+		.div-fb-like, .div-pinterest-follow {
+			float: right;
+			width: 100%;
+			text-align: right;
+			margin-bottom: 20px;
+
+			a {
+				.transition(none);
+			}
+		}
+
+		h1 {
+			text-align: center;
+		}
+		
+		.thumbnails {
+			margin: 0 -10px;
+		}
+		.thumbnail {
+			//position: relative;
+			margin-top: -58px;
+
+			padding: 0 10px;
+
+			.circle {
+				width: 116px;
+				height: 116px;
+				position: relative;
+				z-index: 10;
+				top: 58px;
+				left: -58px;
+				margin: 0 50%;
+
+				&.fiber {
+					background: url("../../../_img/home/DRM259_greenCircle_fiber.png") no-repeat top left;
+				}
+				&.protein {
+					background: url("../../../_img/home/DRM259_greenCircle_protein.png") no-repeat top left;
+				}
+				&.taste {
+					background: url("../../../_img/home/DRM259_greenCircle_taste.png") no-repeat top left;
+				}
+			}
+			
+			.brownLines {
+				height: 3px;
+				border-top: 1px solid @orange;
+				border-bottom: 1px solid @orange;
+			}
+
+			span.text {
+				position: absolute;
+				left: -5000px;
+			}
+
+			p {
+				font-weight: bold;
+				text-align: center;
+				padding: 10px 10px 0;
+				
+				&.fiber {
+					padding: 10px 10px 0;
+				}
+				&.taste {
+					margin: 0 0px 20px;
+				}
+			}
+
+			a.btn-blue {
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	
+	.ca_2 {
+		.clearfix;
+		
+		.ftr_thumbs {
+			padding: 0 0 0px 0;
+			.clearfix;
+			
+			a {
+				text-decoration: none;
+			
+				div {
+					border-right: 1px solid @orange;
+					border-bottom: 1px solid @orange;
+				}
+				
+				&:nth-of-type(n+3) {
+					div {
+						border-bottom: none;
+					}
+				}
+				
+				&:nth-of-type(even) {
+					div {
+						border-right: none;
+					}
+				}
+			}
+			
+			img {
+				max-width: 220px;
+				margin: 0 auto 2px;
+			}
+			
+			div {
+				text-align: center;
+				padding-bottom: 15px;
+			}
+			
+			div {
+				.col-span(1,2);
+				margin: 0;
+			}
+			
+			span {
+				.font-size(20);
+				.line-height(21);
+				font-family: @headingfont;
+				color: @textdefault;
+				font-weight: bold;
+			}
+		}
+	}
+
+	
+	
+// RESPONSIVE
+// ============================================================
+	
+@media only screen and (min-width: 481px) {
+
+	.greenbox {
+		width: 100%;
+		height: auto;
+		float: none;
+		margin: 0 0 0px 0;
+		padding-bottom: 20px;
+		
+		h1 {
+			.clearfix;
+			position: relative;
+			margin: -7% 20px;
+			//margin: 20px;
+			z-index: 20;
+			color: @white;
+			.font-size(36);
+			.line-height(36);
+			text-align: center;
+		}
+		
+		#subscribeForm {
+			padding: 0 10px;
+			margin: 0 -20px;
+			
+			div.unsubChk {
+				margin: 3px 0 0 20px
+			}
+		}
+		.div-email {
+			padding: 0 10px 10px;
+		}
+		.div-zip, .div-coupon_submit {
+			width: 50%;
+			float: left;
+			padding: 0 10px;
+		}
+		.div-coupon_submit  {
+			width: 50%;
+		}
+		
+		.buttons {
+			.clearfix;
+			margin: 0 -10px;
+			padding: 0 10px;
+			
+			.btn1, .btn2 {
+				width: 50%;
+				float: left;
+				padding: 0 10px;
+			}
+			.btn1 {
+				margin-bottom: 0px;
+			}
+		}
+		
+	}	
+
+	#hero {
+		img {
+			display: none;
+		}
+
+		a.hero-link {
+			display: block;
+			height: 362px;
+		}
+
+		height: 362px;
+		background: url("../../../_img/DRM080/DRM080_FB_hero_med.jpg") no-repeat left 0px;
+		background-size: 748px auto;
+
+		.kids & {
+			background: url("../../../_img/DRM080/DRM080_FB_Kids_hero_med.jpg") no-repeat left 0px;
+			background-size: 748px auto;
+		}
+	}
+
+	.ca_1 {
+	}
+	
+	.ca_2 {
+		
+		.ftr_thumbs {
+			
+			a {
+				div {
+					border-right: 1px solid @orange;
+					border-bottom: 1px solid @orange;
+				}
+				
+				&:nth-of-type(n+3) {
+					div {
+						border-bottom: none;
+					}
+				}
+				
+				&:nth-of-type(even) {
+					div {
+						border-right: none;
+					}
+				}
+			}
+			
+			div {
+				.col-span(1,2);
+				margin: 0;
+			}
+			
+			span {
+				.font-size(26);
+				.line-height(28);
+				font-family: @headingfont;
+				color: @textdefault;
+				font-weight: bold;
+			}
+		}
+	}
+	
+
+} 
+@media only screen and (min-width: 640px) {
+
+	.ca_1 {
+		padding: 0 30px 30px 30px; 
+		.thumbnail {
+			.col-span(1,3);
+		}
+
+		.btn_GetMoreRecipes {
+			max-width: 262px;
+			margin: 0 auto;
+		}
+	}
+}
+@media only screen and (min-width: 768px) {
+	
+	.outer_greenbox {
+		position: absolute;
+		top: 22px;
+		right: 26px;
+		
+		width: 442px;
+		height: auto;
+		//float: right;
+		margin: 0 0 0 20px;
+		padding: 0;
+		
+		.form_disclaimer {
+			font-size: 11px; 
+			line-height: 14px;
+		}
+	}
+	
+	.greenbox {
+
+		#subscribeForm {
+			padding: 0 10px;
+			margin: 0 -20px;
+		}
+		.div-zip, .div-coupon_submit {
+			width: 45%;
+			float: left;
+			padding: 0 10px;
+		}
+		.div-coupon_submit  {
+			width: 55%;
+		}
+	}	
+
+	#hero {
+		img {
+			//display: block;
+		}
+
+		a.hero-link {
+			display: block;
+			height: 476px;
+		}
+
+		height: 476px;
+		background: url("../../../_img/DRM080/DRM080_FB_hero.jpg") no-repeat left 0px;
+		background-size: 944px auto;
+		//height: auto;
+
+		.kids & {
+			background: url("../../../_img/DRM080/DRM080_FB_Kids_hero.jpg") no-repeat left 0px;
+			background-size: 944px auto;
+		}
+	}	
+	
+	.ca_1 {
+		
+		.thumbnail {
+			p {
+				font-weight: bold;
+				text-align: center;
+				padding: 10px 10px 0;
+				
+				&.fiber {
+					padding: 10px 20px 0;
+				}
+				&.taste {
+					margin: 0 -15px 20px;
+				}
+			}
+		}
+	}
+	
+	.ca_2 {
+		
+		.ftr_thumbs {
+			
+			a {
+			
+				div {
+					border-right: none;
+					border-right: 1px solid @orange;
+				}
+				
+				&:nth-of-type(even) {
+					div {
+						border-right: 1px solid @orange;
+					}
+				}
+				
+				&:nth-of-type(n) {
+					div {
+						border-bottom: none;
+					}
+				}
+				
+				&:last-of-type {
+					div {
+						border-right: none;
+					}
+				}
+			}
+			
+			div {
+				.col-span(1,4);
+				margin: 0;
+
+			}
+		}
+	}
+
+}
+@media only screen and (min-width: 900px) {
+}
+@media only screen and (min-width: 1024px) {
+}
+	
+	
+// REPEAT RESPONSIVE FOR IE7 AND 8
+// ------------------------------------------------
+	
+.lt-ie9 {
+	
+	.greenbox {
+		width: 100%;
+		height: auto;
+		float: none;
+		margin: 0 0 0px 0;
+		padding-bottom: 20px;
+		
+		h1 {
+			.clearfix;
+			position: relative;
+			margin: -7% 20px;
+			//margin: 20px;
+			z-index: 20;
+			color: @white;
+			.font-size(36);
+			.line-height(36);
+			text-align: center;
+		}
+		
+		#subscribeForm {
+			padding: 0 10px;
+			margin: 0 -20px;
+			
+			div.unsubChk {
+				margin: 3px 0 0 20px;
+
+				& input {
+					border: none !important;
+					background: none !important;
+				}
+				
+			}
+		}
+		.div-email {
+			padding: 0 10px 10px;
+		}
+		.div-zip, .div-coupon_submit {
+			width: 50%;
+			float: left;
+			padding: 0 10px;
+		}
+		.div-coupon_submit  {
+			width: 50%;
+		}
+		
+		.buttons {
+			.clearfix;
+			margin: 0 -10px;
+			padding: 0 10px;
+			
+			.btn1, .btn2 {
+				width: 50%;
+				float: left;
+				padding: 0 10px;
+			}
+			.btn1 {
+				margin-bottom: 0px;
+			}
+		}
+		
+	}	
+
+	#hero {
+		img {
+			display: none;
+		}
+
+		a.hero-link {
+			display: block;
+			height: 362px;
+		}
+
+		height: 362px;
+		background: url("../../../_img/DRM080/DRM080_FB_hero_med.jpg") no-repeat left 0px;
+		background-size: 748px auto;
+
+		.kids & {
+			background: url("../../../_img/DRM080/DRM080_FB_Kids_hero_med.jpg") no-repeat left 0px;
+			background-size: 748px auto;
+		}
+	}
+
+	.ca_1 {
+	}
+	
+	.ca_2 {
+		
+		.ftr_thumbs {
+			
+			a {
+				div {
+					border-right: 1px solid @orange;
+					border-bottom: none;
+				}
+				
+				&:nth-of-type(n+3) {
+					div {
+						border-bottom: none;
+					}
+				}
+				
+				&:nth-of-type(even) {
+					div {
+						border-right: none;
+					}
+				}
+			}
+			
+			div {
+				.col-span(1,2);
+				margin: 0;
+			}
+			
+			span {
+				.font-size(26);
+				.line-height(28);
+				font-family: @headingfont;
+				color: @textdefault;
+				font-weight: bold;
+			}
+		}
+	}
+	
+
+	.ca_1 {
+		padding: 0 30px 30px 30px; 
+		.thumbnail {
+			.col-span(31,100); //special to IE7
+		}
+
+		.btn_GetMoreRecipes {
+			max-width: 262px;
+			margin: 0 auto;
+		}
+	}
+	
+	.outer_greenbox {
+		position: absolute;
+		top: 22px;
+		right: 26px;
+		
+		width: 442px;
+		height: auto;
+		//float: right;
+		margin: 0 0 0 20px;
+		padding: 0;
+		
+		.form_disclaimer {
+			font-size: 11px; 
+			line-height: 14px;
+		}
+	}
+	
+	.greenbox {
+
+		#subscribeForm {
+			padding: 0 10px;
+			margin: 0 -20px;
+		}
+		.div-zip, .div-coupon_submit {
+			width: 45%;
+			float: left;
+			padding: 0 10px;
+		}
+		.div-coupon_submit  {
+			width: 55%;
+		}
+	}	
+
+	#hero {
+		img {
+			//display: block;
+		}
+
+		a.hero-link {
+			display: block;
+			height: 476px;
+		}
+
+		height: 476px;
+		background: url("../../../_img/DRM080/DRM080_FB_hero.jpg") no-repeat left 0px;
+		background-size: 944px auto;
+		//height: auto;
+
+		.kids & {
+			background: url("../../../_img/DRM080/DRM080_FB_Kids_hero.jpg") no-repeat left 0px;
+			background-size: 944px auto;
+		}
+	}	
+	
+	.ca_1 {
+		
+		.thumbnail {
+			p {
+				font-weight: bold;
+				text-align: center;
+				padding: 10px 10px 0;
+				
+				&.fiber {
+					padding: 10px 20px 0;
+				}
+				&.taste {
+					margin: 0 -15px 20px;
+				}
+			}
+		}
+	}
+	
+	.ca_2 {
+		
+		.ftr_thumbs {
+			
+			a {
+				display: block;
+				cursor: pointer;
+				
+				div {
+					border-right: none;
+					border-right: 1px solid @orange;
+				}
+				
+				&:nth-of-type(even) {
+					div {
+						border-right: 1px solid @orange;
+					}
+				}
+				&:last-child {
+					div {
+						border-right: none;
+					}
+				}
+
+				
+				&:nth-of-type(n) {
+					div {
+						border-bottom: none;
+					}
+				}
+				
+				&:last-child {
+					div {
+						border-right: none;
+					}
+				}
+			}
+			
+			div {
+				.col-span(24,100); //special to IE7
+				margin: 0;
+
+			}
+		}
+	}
+
+
+} //end lt-ie9
+
+
+.lt-ie8 {
+	html {
+		overflow-x: hidden;
+	}
+	.outer_greenbox {
+		top: 50px;
+	}
+	input#email {
+		width: 380px;
+		height: 16px;
+	}
+	.greenbox .div-zip {
+		width: 35%;
+	}
+	input#zip {
+		width: 120px;
+		height: 16px;
+		float: left;
+	}
+	.div-coupon_submit {
+		float: left;
+	}
+	.btn-white SPAN.arrow {
+		top: 0px;
+	}
+
+
+}
+

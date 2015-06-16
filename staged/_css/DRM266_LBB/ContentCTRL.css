@@ -1,0 +1,79 @@
+
+
+
+@media screen and (max-width: 620px) {
+	
+/* -------- Content (Ctrl) Styles -------- */
+		
+  /* Image Mod */
+	  table[class="cc_wrapper"] .cc_likeContent img {max-height:18px !important;}
+	  table[class="cc_wrapper"] img.fullSize, 
+		table[class="cc_wrapper"] img.cc_inlineImage {max-width:100% !important; width:auto !important;}
+	  table[class="cc_wrapper"] .header_image img {max-width:100% !important; width:auto !important;}
+	  table[class="cc_wrapper"] .cc_main_image_cont {width:auto;}
+  
+  /* Resize Main Post Images */
+	  table[class="cc_wrapper"] .sub_item_image_full, 
+		table[class="cc_wrapper"] .sub_item_image_third,
+		table[class="cc_wrapper"] .sub_item_image_half,
+		table[class="cc_wrapper"] .main_image_third,
+		table[class="cc_wrapper"] .main_image_half,
+		table[class="cc_wrapper"] .main_image_full {max-width:100%;width:auto !important; }
+  
+  /* Resize Secondary Post Images */
+	  table[class="cc_wrapper"] .cc_twoColContainer .sub_items .cc_blockme {display:block !important; width:100% !important;}
+	  table[class="cc_wrapper"] .cc_twoColContainer .sub_items .sub_item_image_cont {padding-bottom:10px !important;}
+	  table[class="cc_wrapper"] .cc_twoColContainer .sub_items .sub_item_image_cont img {max-width:100% !important;  width:auto !important;}
+				  
+  /* Text Modifications */
+	  table[class="cc_wrapper"] .title_text {font-size:14px !important;}
+	  table[class="cc_wrapper"] .cc_cta_button {font-size:14px !important;}
+	  table[class="cc_wrapper"] .title_text,
+	  table[class="cc_wrapper"] .desc_text,
+	  table[class="cc_wrapper"] .sub_item_text_cont {word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;}
+		
+  /* Event Styles */
+	  table[class="cc_wrapper"] .cc_imgLeft .cc_main_image_cont img {max-width:150px !important;}
+
+  @-moz-document url-prefix() {
+	/* Fix Firefox max-width */
+		img[class="sub_item_image_full"], img[class="main_image_full"], img[class="fullSize"] {max-width:100%;  width:100% !important; }
+		table[class~="cc_twoColContainer"] tr[class="sub_items"] td[class~="sub_item_image_cont"] img {max-width: 100%;width:100% !important;}
+  }	
+}
+
+
+@media screen and (max-width: 480px) {
+	
+/* -------- Content (Ctrl) Styles -------- */
+  /* Make Columns Stack */	
+	  table[class="cc_wrapper"] .cc_blockme {display:block !important; width:100% !important; padding-left:0px !important; padding-right:0px !important;}	
+  
+  /* Fix Columg Width For Image Left Layout */
+	  table[class="cc_wrapper"]  .cc_imgLeft .cc_blockme {display:block; max-width:100% !important; width:auto !important;}
+  
+  /* Re-Style Side By Side Layout */
+	  table[class="cc_wrapper"] .cc_avatar img {width:100% !important; max-width:70px;}
+	  table[class="cc_wrapper"] .cc_avatar {width:35px !important; padding-bottom:3px;}
+	  table[class="cc_wrapper"] .cc_contentContainer {display:block; width:auto !important;}
+	  table[class="cc_wrapper"] .cc_twoColContainer_flow .cc_likeName {display:none !important;}
+	  table[class="cc_wrapper"] .cc_twoColContainer_flow .cc_likeAvatar img {width:auto !important; max-width:23px;}
+	  table[class="cc_wrapper"] .cc_twoColContainer_flow .cc_shareName {display:none !important;}
+	  table[class="cc_wrapper"] .cc_twoColContainer_flow .cc_shareAvatar img {width:auto !important; max-width:23px;}
+	  table[class="cc_wrapper"] .cc_twoColContainer_flow .cc_twoColContainer_left {padding:0px !important;display:block; width:100% !important;}
+	  table[class="cc_wrapper"] .cc_twoColContainer_flow .cc_twoColContainer_right {padding:0px !important;display:block; width:100% !important;}
+
+  /* Twitter Styles */
+	  table[class="cc_wrapper"] .cc_twoColContainer_flow .sub_items  {display:block !important; width:100% !important;}
+	  table[class="cc_wrapper"] .cc_twoColContainer_flow .cc_twitter_names {display:block !important; width:100% !important;}
+	  table[class="cc_wrapper"] .cc_twoColContainer_flow .cc_twitter_time {display:block !important; width:100% !important;text-align: left; padding-top:3px;} {display:block !important; width:100% !important;}
+
+  /* Event Styles */
+    table[class="cc_wrapper"] .cc_cta_spacer {display:inline-block !important; margin-bottom:4px; }
+    table[class="cc_wrapper"] .cc_cta_button {display:inline-block !important; margin-bottom:4px; }
+    table[class="cc_wrapper"] .cc_leftalign {text-align:left !important;}
+    table[class="cc_wrapper"] .cc_rightalign {text-align:right !important;}
+	  table[class="cc_wrapper"] .cc_featImage .cc_edetails_main_cont {padding-bottom:5px;}
+	  table[class="cc_wrapper"] .cc_imgLeft .cc_main_image_cont {padding-top:10px;}
+	  table[class="cc_wrapper"] .cc_imgLeft .cc_main_image_cont img {max-width:100% !important;}
+}

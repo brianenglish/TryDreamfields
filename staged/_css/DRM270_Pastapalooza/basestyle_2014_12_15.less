@@ -1,0 +1,485 @@
+@import "normalize.less";
+@import "lesshat.less";
+@import "../DRM259/helpers.less";
+@import "../DRM259/elements.less";
+
+
+
+// MAIN STYLES
+// ============================================================
+	
+	body {
+		background: url(../../_img/bg_tile_v01.jpg);		
+	}
+	
+	h1 {
+		.font-size(29);
+		.line-height(28);
+		text-align: left;
+	}
+	
+	// HYPERLINK
+	.hyperlink {
+		color: @accent;
+		text-decoration: underline;
+		.transition(~"color 0.25s ease-out, background 0.25s ease-out");
+		
+		&:hover, &:focus, &:active {
+			color: darken(@accent, 5%);
+			outline: 0;
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	// Pinterest Follow buttons, no background transition
+	span.no-CSS-transition a {
+
+		.transition(~"color 0.25s ease-out");
+	}
+	
+	// OL  and  ULs
+	ol.main, ul.main {
+		margin: 20px 0 20px 20px ;
+		li {
+			padding: 0 0 10px 0;
+		}
+		li:last-of-type {
+			padding: 0;
+		}
+	}
+	
+	// ShareThis
+	.share {
+		.font-size(11);
+		font-weight: bold;
+		text-transform: uppercase;
+		top: -4px;
+		margin-right: 5px;
+		position: relative;
+	}
+	.st_fblike {
+		top: -5px;
+		position: relative;
+	}
+	
+	.disclaimer {
+		.font-size(13);
+		.line-height(16);
+		
+	}
+	span.asterisk {
+		color: @red;
+	}
+	.btn-blue {
+		@type: btnblue;
+		.btn(@type);
+	}
+	.btn-white {
+		@type: btnwhite;
+		.btn(@type);
+	}
+	
+	// form code, HTML5 placeholder on text input
+	.empty {
+		//color: #ff0000 !important;
+		color: @darkgray !important;
+	}
+	input {
+		.placeholder(@darkgray);
+	}
+	
+	label.error {
+		color: #ff0000;
+		font-weight: bold;
+		text-transform: uppercase;
+		.font-size(13);
+		width: 100%;
+		display: block;
+		.clearfix;
+	}
+	
+	.container {
+		width: 100%;
+		max-width: 956px;
+		margin: 0 auto 30px auto; 
+		position: relative;
+	}
+	
+	.greenbox {
+		background-color: @green;
+		.inner-shadow(@black);
+	}
+	
+	.show_mobile {
+		display: inline-block;
+	}
+	.show_desktop {
+		display: none;
+	}
+	
+	.site_header {
+		position: relative;	
+		z-index: 10;
+		
+		top: -82px;
+		
+		.site_logo a {
+			.ir;
+			
+			width: 110px;
+			height: 110px;
+			display: block;
+			margin: -5px 0 0 -55px;
+			position: absolute;
+			top: 0px; 
+			left: 50%;
+			background: url("../../_img/DRM259_logoDrm_380x380.png") no-repeat;
+			background-size: 100% 100%;
+		}
+	}
+
+	
+	.site_body {
+		background-color: @cream;
+		margin: 88px 0 0 0;
+		padding: 5px 0;
+		
+		.background-image(
+			linear-gradient(to top, rgba(230,204,159,1) 0px,rgba(249,242,232,0) 20px),
+			linear-gradient(to bottom, rgba(230,204,159,1) 0px,rgba(249,242,232,0) 20px)
+		);
+		.box-shadow(0px 2px 3px rgba(0,0,0,0.3));
+
+		#border-gold {
+			border-top: 1px solid @orange;
+			border-bottom: 1px solid @orange;
+			padding: 0px 0;	
+		}
+				
+		.main-content {
+			margin: 20px 0 0 0;
+			padding: 0px 0px 0px 0px;
+			
+			body.home site-body & {
+				padding: 150px 20px 30px 20px;
+			}
+			
+			.ca_special {
+				background-color: @cream-darker;
+				margin: 0 0px 0px 0px;
+				padding: 20px 20px 20px 20px;
+				border-top: 1px solid @orange;
+			}
+			
+			.videoWrapper {
+				position: relative;
+				padding-bottom: 56.25%; /* 16:9 */
+				padding-top: 25px;
+				height: 0;
+			}
+			.videoWrapper iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+	
+	.copyright {
+		width: 240px;
+		.font-size(14);
+		text-transform: uppercase;
+		margin: 0 auto;
+	}
+
+
+
+	
+	
+// RESPONSIVE
+// ============================================================
+	
+@media only screen and (min-width: 481px) {
+	.site_header {
+		top: -86px;
+		
+		.site_logo a {
+			width: 120px;
+			height: 120px;
+			display: block;
+			margin: -5px 0 0 -60px;
+			position: absolute;
+			top: 0px; 
+			left: 50%;
+			background: url("../../_img/DRM259_logoDrm_380x380.png") no-repeat;
+			background-size: 100% 100%;
+		}
+	}
+}
+@media only screen and (min-width: 640px) {
+
+	.site_header {
+		top: -86px;
+		
+		.site_logo a {
+			width: 140px;
+			height: 140px;
+			display: block;
+			margin: -5px 0 0 -70px;
+			position: absolute;
+			top: 0px; 
+			left: 50%;
+			background: url("../../_img/DRM259_logoDrm_380x380.png") no-repeat;
+			background-size: 100% 100%;
+		}
+	}
+
+	.site_body {
+		.background-image(
+			linear-gradient(to left, rgba(230,204,159,1) 0px, rgba(249,242,232,0) 27px),
+			linear-gradient(to right, rgba(230,204,159,1) 0px, rgba(249,242,232,0) 20px),
+			linear-gradient(to top, rgba(230,204,159,1) 0px, rgba(249,242,232,0) 20px),
+			linear-gradient(to bottom, rgba(230,204,159,1) 0px, rgba(249,242,232,0) 20px)
+		);
+		.box-shadow(0px 2px 3px rgba(0,0,0,0.3));
+		
+		#border-gold {
+			border: 1px solid @orange;
+			padding: 0px;	
+		}
+		
+		.main-content {
+			.clearfix;
+			margin: 30px 0 0 0;
+			padding: 0 0px 0px 0px;
+			clear: both;
+			
+			body.home & & {
+				margin: 30px 0 0 0;
+			}
+			
+			.ca_special {
+				margin: 0 0px 0px 0px;
+			}
+		}
+	}
+	
+	.copyright {
+		width: 240px;
+		margin: 0  0 0 5px;
+	}
+}
+@media only screen and (min-width: 768px) {
+	
+	.show_mobile {
+		display: none;
+	}
+	.show_desktop {
+		display: inline-block;
+	}
+	
+	h1 {
+		.font-size(45);
+		.line-height(44);
+		text-align: left;
+		
+		&.larger {
+			.font-size(44); //56 64
+			.line-height(37); //47 55
+		}
+		
+		&.smaller {
+			.font-size(41);
+			.line-height(39);
+		}
+	}
+	
+	.site_header {
+		top: 0px;
+		
+		.site_logo a {
+			width: 190px;
+			height: 190px;
+			position: absolute; 
+			top: 10px; 
+			left: 80px;
+			background: url("../../_img/DRM259_logoDrm_380x380.png") no-repeat;
+			background-size : 100% 100%;
+		}
+	}
+	
+	.site_body {
+		
+		margin: 33px 0 0 0;
+		padding: 5px;
+		
+	}
+}
+@media only screen and (min-width: 900px) {
+}
+@media only screen and (min-width: 1024px) {
+}
+	
+	
+// REPEAT RESPONSIVE FOR IE7 AND 8
+// ------------------------------------------------
+	
+.lt-ie9 {
+
+
+
+
+	.site_header {
+		top: -32px;
+		
+		.site_logo a {
+			width: 140px;
+			height: 140px;
+			display: block;
+			margin: -5px 0 0 -70px;
+			position: absolute;
+			top: 0px; 
+			left: 50%;
+			background: url("../../_img/DRM259_logoDrm_380x380.png") no-repeat;
+			background-size: 100% 100%;
+		}
+	}
+
+	.site_body {
+		.background-image(
+			linear-gradient(to left, rgba(230,204,159,1) 0px, rgba(249,242,232,0) 27px),
+			linear-gradient(to right, rgba(230,204,159,1) 0px, rgba(249,242,232,0) 20px),
+			linear-gradient(to top, rgba(230,204,159,1) 0px, rgba(249,242,232,0) 20px),
+			linear-gradient(to bottom, rgba(230,204,159,1) 0px, rgba(249,242,232,0) 20px)
+		);
+		.box-shadow(0px 2px 3px rgba(0,0,0,0.3));
+		
+		#border-gold {
+			border: 1px solid @orange;
+			padding: 0px;	
+		}
+		
+		.main-content {
+			.clearfix;
+			margin: 30px 0 0 0;
+			padding: 0 0px 0px 0px;
+			clear: both;
+			
+			body.home & & {
+				margin: 30px 0 0 0;
+			}
+			
+			.ca_special {
+				margin: 0 0px 0px 0px;
+			}
+		}
+	}
+	
+	.copyright {
+		width: 240px;
+		margin: 0  0 0 5px;
+	}
+
+	
+	.show_mobile {
+		display: none;
+	}
+	.show_desktop {
+		display: inline-block;
+	}
+	
+	h1 {
+		.font-size(45);
+		.line-height(44);
+		text-align: left;
+		
+		&.larger {
+			.font-size(64);
+			.line-height(55);
+		}
+		
+		&.smaller {
+			.font-size(41);
+			.line-height(39);
+		}
+	}
+	
+	.site_header {
+		top: 0px;
+		
+		.site_logo a {
+			width: 190px;
+			height: 190px;
+			position: absolute; 
+			top: 10px; 
+			left: 80px;
+			background: url("../../_img/DRM259_logoDrm_380x380.png") no-repeat;
+			background-size : 100% 100%;
+		}
+	}
+	
+	.site_body {
+		
+		margin: 33px 0 0 0;
+		padding: 5px;
+		
+	}
+	
+	
+
+} //end lt-ie9
+
+
+/* Additional lt-ie9 */
+.lt-ie9 {
+	body {
+		overflow-x: auto;
+	}
+
+	.container {
+		max-width:956px !important;
+		min-width:956px !important;
+	}
+
+	.site_header {
+		top: 0px;
+		
+		.site_logo a {
+			width: 190px;
+			height: 190px;
+			position: absolute; 
+			top: 10px; 
+			left: 80px;
+			background: url("../../_img/DRM259_logoDrm_190x190.png") no-repeat;
+		}
+	}
+
+}
+/* Additional lt-ie8 */
+.lt-ie8 {
+
+	.container {
+		max-width:956px !important;
+		min-width:956px !important;
+	}
+
+	.site_header {
+		top: 0px;
+		
+		.site_logo a {
+			width: 190px;
+			height: 190px;
+			position: absolute; 
+			top: 40px; 
+			left: 80px;
+			background: url("../../_img/DRM259_logoDrm_190x190.png") no-repeat;
+		}
+	}
+	
+
+}
+

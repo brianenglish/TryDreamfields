@@ -1,0 +1,997 @@
+html {
+	/*overflow: -moz-scrollbars-vertical;*/ /* Force vertical scrollbar in Firefox */
+	overflow-y: scroll; /* Force vertical scrollbar in Firefox */
+}
+body{
+	min-width:765px; /* helped fix browser resized small (background was disappearing in the footer in IE7*/
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+	margin:0;
+	padding:0;
+	height:100%;
+	background:#f0ecd3;
+	/*overflow:-moz-scrollbars-vertical; /* Add scrollbar in Firefox */
+}
+a:link{color:#993300;}
+a:hover{color:#993300;}
+a:visited{color:#993300;}
+a:visited:hover{color:#993300;}
+
+	/*=============================*/
+	/* GLOBAL STYLES               */
+	/*-----------------------------*/
+	
+	.clear { display:block; height:0px; clear:both; }
+	* html .clear { display:block; height:10px; line-height:10px; margin:-10px 0 0 0; clear:both; } /* IE 6 clear */
+	
+	
+	/*=============================*/
+	/* UK / Spanish nav            */
+	/*-----------------------------*/
+	#segments {
+		width:189px;
+		margin:0px 0;
+	}
+	
+	#segments #nav {
+		list-style-image:none;
+		list-style-position:outside;
+		list-style-type:none;
+		margin:0;
+		padding:0px;
+	}
+	
+	#segments #nav li {
+		margin:0px;
+		padding:0px;
+		list-style:none;
+	}
+	
+	#segments #nav li a {
+		display:block;
+		outline:none;
+		width:189px;
+		height:31px;
+		margin:0;
+		padding:0;
+		background:transparent;
+		vertical-align:middle;
+		text-decoration:none;
+		color:#5e5e5e;
+		background: url(../images/sprite_segments_v01.gif);
+	}
+	
+	#segments #nav li.espanol a {			background-position: 0px 0px; }
+	#segments #nav li.espanol a:hover {		background-position: -189px 0px; }
+	
+	#segments #nav li.uk a {				background-position: 0px -31px; }
+	#segments #nav li.uk a:hover {			background-position: -189px -31px; }
+	
+	#segments #nav li.media a {				background-position: 0px -62px; }
+	#segments #nav li.media a:hover {		background-position: -189px -62px; }
+	
+	#segments #nav li.lineBtm {				background: url(../images/sprite_segments_v01.gif); 
+											font-size:1px; line-height:1px;
+											background-position: 0px -62px; width:189px; height:1px; display:block; margin:0 0 10px 0; padding:0; }
+	
+	#segments #nav li a span{
+		margin-left:-3000px;
+	}
+	
+	
+	/*=============================*/
+	/* Media button                */
+	/*-----------------------------*/
+	#mediaBtn {
+		width:189px;
+		margin:0px 0;
+	}
+	
+	#mediaBtn #nav {
+		list-style-image:none;
+		list-style-position:outside;
+		list-style-type:none;
+		margin:0;
+		padding:0px;
+	}
+	
+	#mediaBtn #nav li {
+		margin:0px;
+		padding:0px;
+		list-style:none;
+	}
+	
+	#mediaBtn #nav li a {
+		display:block;
+		outline:none;
+		width:189px;
+		height:31px;
+		margin:0;
+		padding:0;
+		background:transparent;
+		vertical-align:middle;
+		text-decoration:none;
+		color:#5e5e5e;
+		background: url(../images/sprite_segments_v01.gif);
+	}
+	
+	#mediaBtn #nav li.media a {				background-position: 0px -62px; }
+	#mediaBtn #nav li.media a:hover {		background-position: -189px -62px; }
+	
+	#mediaBtn #nav li.lineBtm {				background: url(../images/sprite_segments_v01.gif); 
+											font-size:1px; line-height:1px;
+											background-position: 0px -62px; width:189px; height:1px; display:block; margin:0 0 0px 0; padding:0; }
+	
+	#mediaBtn #nav li a span{
+		margin-left:-3000px;
+	}
+	
+	
+	/*=============================*/
+	/* Video button                */
+	/*-----------------------------*/
+	#videoBtn {
+		width:189px;
+		margin:0px 0;
+	}
+	
+	#videoBtn #nav {
+		list-style-image:none;
+		list-style-position:outside;
+		list-style-type:none;
+		margin:0;
+		padding:0px;
+	}
+	
+	#videoBtn #nav li {
+		margin:0px;
+		padding:0px;
+		list-style:none;
+	}
+	
+	#videoBtn #nav li a {
+		display:block;
+		outline:none;
+		width:189px;
+		height:132px;
+		margin:0;
+		padding:0;
+		background:transparent;
+		vertical-align:middle;
+		text-decoration:none;
+		color:#5e5e5e;
+		background: url(../images/sprite_video_v01.jpg);
+	}
+	
+	#videoBtn #nav li.video a {				background-position: 0px 0px; }
+	#videoBtn #nav li.video a:hover {		background-position: -189px 0px; }
+	
+	#videoBtn #nav li.lineBtm {				background: url(../images/sprite_video_v01.jpg); 
+											font-size:1px; line-height:1px;
+											background-position: 0px -62px; width:189px; height:1px; display:block; margin:0 0 0px 0; padding:0; }
+	
+	#videoBtn #nav li a span{
+		margin-left:-3000px;
+	}
+	
+	
+	/*=============================*/
+	/* Blogger Video button        */
+	/*-----------------------------*/
+	#btnVid {
+	width:235px;
+	height:41px;
+	margin:10px 0;
+	display:block;
+	}
+	#btnVid #nav {
+		list-style-image:none;
+		list-style-position:outside;
+		list-style-type:none;
+		margin:0;
+		padding:0px;
+	}
+	#btnVid #nav li {
+		float:left;
+		margin:0px;
+		padding:0px;
+		list-style:none;
+	}
+	#btnVid #nav li a {
+		display:block;
+		outline:none;
+		width:235px;
+		height:41px;
+		background:transparent;
+		vertical-align:middle;
+		text-decoration:none;
+		color:#5e5e5e;
+		background: url(../images/btn_watchVideo_v01.jpg);
+	}
+	#btnVid #nav li.watchVideo a {
+		background-position: 0px 0px;
+	}
+	
+	#btnVid #nav li a span {
+		margin-left:-3000px;
+	}
+	#btnVid #nav li.selected a em {
+		font-weight:bold;
+	}
+	
+	
+	
+	
+	body#blog #btnVid { display:none; }
+	/*=============================*/
+	/* Blog OL .commentlist        */
+	/*-----------------------------*/
+	ol.commentlist { display:none; }	
+	body#blog div#respond { display:none; }
+	
+
+.whiteLink{
+color:#ffffff;
+}
+.whiteLink a:link{color:#ffffff;}
+.whiteLink a:hover{color:#ffffff;}
+.whiteLink a:visited{color:#ffffff;}
+.whiteLink a:visited:hover{color:#ffffff;}
+
+.brownLink{
+color:#993300;
+}
+.brownLink a:link{color:#993300;}
+.brownLink a:hover{color:#993300;}
+.brownLink a:visited{color:#993300;}
+.brownLink a:visited:hover{color:#993300;}
+
+h1 {
+font-family:Arial, Helvetica, sans-serif;
+font-weight:bold;
+color:#993300;
+font-size:16px;
+margin:0px 0 10px 0;
+}
+.h1_green {
+font-family:Arial, Helvetica, sans-serif;
+font-weight:bold;
+color:#5c9945;
+font-size:16px;
+margin:0px 0 10px 0;
+}
+h2 {
+	color:#cc6600; /* was 993300 brown */
+	font-size:13px;
+	margin:-2px 0 8px 0;
+}
+h2.brown {
+	color:#993300; /* brown */
+	margin:0px 0 2px 0;
+}
+h2.white {
+	color:#ffffff;
+	margin:0px 0 2px 0;
+}
+.bold_14px {
+	font-size:14px;
+	font-weight:bold;
+}
+.quote{
+font-family:Georgia, "Times New Roman", Times, serif;
+margin:0 0 0 20px;
+font-size:14px;
+font-style:italic;
+color:#666666;
+}
+
+.divider_dashed {
+	background-image:url(../images/divider_dashed.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+
+.ol_margin li{
+margin:10px 0 0 -20px;
+}
+
+.ol_main{
+	margin:15px 0 15px 50px;
+	padding:0;
+}
+.ol_main li{
+	margin:10px 0 0 0px;
+}
+
+.bold_italic{
+font-weight:bold;
+font-style:italic;
+}
+img{
+border-width:0px;
+/* display:block; /* assumes img is only element in td */
+display:inline;
+}
+.bodyText1 {
+font-size:12px;
+color:#000000;
+}
+.content_11px{
+font-size:11px;
+}
+.minipageList {
+list-style:square;
+margin-top:0px;
+margin-bottom:8px;
+padding:0 0 0 -5px;
+list-style-position:5px;
+}
+.minipageList li {
+margin:0 0 10px 0;
+}
+/*.minipageList li a{
+color:#000000;
+}
+.minipageList a:link{color:#000000;}
+.minipageList a:hover{color:#000000;}
+.minipageList a:visited{color:#000000;}
+.minipageList a:visited:hover{color:#000000;}
+.minipageList li a#active2{
+color:#993300; /* ff9900 is orange * /
+font-weight:bold;
+}*/
+.mini_active{
+color:#993300;
+font-weight:bold;
+}
+
+/*#newsList {
+list-style:square;
+margin-top:-10px;
+padding:0 0 0 -5px;
+list-style-position:5px;
+}
+#newsList li{
+margin:10px 0 0 -23px;
+}*/
+ul#newsList {
+	list-style:square;
+	margin:0 0 0 15px;
+	padding:0 0 0 0;
+	list-style-position:5px;
+}
+ul#newsList li {
+	margin:0 0 0 0;
+	padding:0 0 14px 0;
+}
+ul#newsList li.omegaZero {
+	margin:0;
+	padding:0;
+}
+
+
+.browseRecipesBG {
+	background-color:#e6e5d7; /* tan */
+}
+
+/* Receipe Blog Stars ---------------------------------------------*/
+/*#stars-1 {
+
+	position:relative;
+	width:260px;
+	margin:0px 0 0 0px;
+}
+
+#stars-1a {
+
+	position:absolute;
+	top:0;
+	left:0;
+	width:110px;
+}
+#stars-1b {
+
+	position:absolute;
+	top:5px;
+	right:0;
+	width:150px;
+	font-size:11px;
+}*/
+#stars-1 {
+	/*background-color:#99CC99;*/
+	position:relative;
+	width:260px;
+	margin:0px 0 0 0px;
+}
+
+#stars-1a {
+	/*background-color:#00CCCC;*/
+	float:left;
+	width:110px;
+
+}
+#stars-1b {
+	/*background-color:#00CC00;*/
+	float:right;
+	width:150px;
+	font-size:11px;
+}
+#stars-footer {
+	background:#cc9;
+	clear:both;
+}
+
+
+.steps_mid {
+	background-image:url(../images/steps_mid.gif);
+	background-position:top left;
+	background-repeat:repeat-y;
+	padding:0px 10px 0px 10px;
+}
+
+
+
+.sideBarBG{
+background-color:#56554c; /* #efd5a4 */
+font-size:11px;
+color:#ffffff;
+}
+.sideBarBG a:link{color:#f5881c;}
+.sideBarBG a:hover{color:#f5881c;}
+.sideBarBG a:visited{color:#f5881c;}
+.sideBarBG a:visited:hover{color:#f5881c;}
+
+.bodyList{
+list-style:square;
+}
+.bodyList li{
+margin:10px 0 0 -20px;
+}
+.bodyList li ul {
+list-style:disc;
+}
+
+#footerBar{
+background-image:url(../images/footerBar.gif);
+background-position:top center;
+background-repeat:no-repeat;
+width:765px;
+height:25px;
+margin:0 auto 0 auto;
+}
+
+/* div for Ads */
+.ads{
+margin:0 0 5px 0;
+}
+.flo_right_img{
+	margin:0 0 10px 10px;
+	padding:0;
+	float:right;
+	width:189px;
+}
+.marg_10px{
+margin:10px 10px 10px 10px;
+}
+.empty_preloader{
+background-image:url(../images/tabs/nav_bg.gif);
+background-repeat:no-repeat;
+background-position:-1000px;
+}
+/* table border  ----------------------------------------------*/
+.brownBorder{
+background-color:#333333; /* was 993300 */
+}
+.headerCell{
+color:#ffffff; /* was 993300 */
+font-weight:bold;
+background-color:#a3481a; /* was cccccc */
+}
+.bodyCell{
+background-color:#fcf7ed; /* was eeeeee */
+}
+
+/* topNav style  ----------------------------------------------*/
+.mainNav_BG {
+	background-image:url(../images/tabs/myTab_2008.gif);
+	background-repeat:repeat-x;
+	background-position: 0px 3px;
+}
+div.taMenu {
+	width:763px; /* was 763 */
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+div.taMenu ul {
+	/*margin-bottom:0px;
+margin-top:0px;
+margin-left:150px;
+margin-right:0px;*/
+margin:0;
+	padding:0px;
+	list-style:none;
+}
+div.taMenu li {
+	background:url(../images/tabs/myTab_2008.gif) repeat-x left top;
+	display:inline;
+	margin:0px;
+	padding:0px;
+}
+div.taMenu li.divider a {
+}
+div.taMenu li.divider span {
+	background:url(../images/tabs/myDivider_2008.gif);
+	background-repeat:no-repeat;
+	background-position:left top;
+	margin:0px;
+	padding:0px;
+}
+div.taMenu a {
+	float:left;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;
+}
+div.taMenu a:link {
+	color:#000000;
+	text-decoration:none;
+}
+div.taMenu a:visited {
+	color:#000000;
+	text-decoration:none;
+}
+div.taMenu a:hover {
+	background-position:100% -28px; /*the tab images move -70px for the hover state of the links */
+	color:#ffffff;
+	text-decoration:none;
+}
+div.taMenu span {
+	display:block;
+	background:url(../images/tabs/myTab_2008.gif) repeat-x left top;
+	padding-top:7px;
+	padding-bottom:7px;
+	padding-right:4px; /* was 5 */
+	padding-left:4px; /* was 5 */
+}
+div.taMenu a:hover span {
+	color:#ffffff;
+	background-position:0% -28px; /* the tab images move -30px for the hover state of the links */
+}
+div.taMenu li#current a {
+	background-position: 100% -28px; /* the tab images move -30x for the #current state of the links */
+}
+div.taMenu li#current span {
+	color:#ffffff;
+	background-position : 0% -28px; /* the tab images move -28px for the #current state of the links */
+}
+
+
+/* leftNav style  ----------------------------------------------*/
+#navcontainer {
+	width: 189px;
+	margin:0 0 5px 0; /* space on the bottom of the div
+	border-right:1px;
+	border-right-color:#336699;*/
+}
+#navcontainer ul {
+	margin:0px;
+	padding:0px;
+	width:189px;
+	list-style-type:none;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+#navcontainer li {
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	line-height: 26px; /* equal to height of BG graphic divided by 2 */
+	background-image:url(../images/leftNav/btn_layer2008_v02.gif);
+	background-repeat:no-repeat;
+	background-position:top right;
+	background-position:100% 0px;
+}
+#navcontainer ul li a {
+	display: block;
+	margin:0;
+	padding:0 0 0 0px; /* padding-left and width should add up to 160 (navcontainer width) */
+	width: 189px;
+	font-size: 12px;
+	background-image:url(../images/leftNav/btn_layer2008_v02.gif);
+	background-repeat:no-repeat;
+	background-position:top right;
+	font-weight:bold;
+}
+#navcontainer ul li a:link, #navcontainer ul li a:visited {
+	color: #fdbc13;
+	text-decoration: none;
+	background-position:100% -0px;
+}
+#navcontainer ul li a:hover {
+	color: #fdbc13;
+	background-position:100% -26px;
+}
+/* selected states */
+#navcontainer ul li a#current {
+	color: #ffffff;
+	background-position:100% -52px;
+	font-weight: bold;
+}
+#navcontainer ul li a#current strong {
+	margin-left:10px;
+}
+#navcontainer ul ul li a#subcurrent {
+	color: #ffffff;
+	font-weight: bold;
+	background-position:100% -78px;
+}
+
+
+
+/* text field for all forms */
+.txtBoxStyle_home{
+    border-top: 1px solid #7f9db9; 
+    border-bottom: 1px solid #7f9db9;
+    border-left: 1px solid #7f9db9;
+    border-right: 1px solid #7f9db9;
+	padding: 2px 0 0 4px;
+    background-color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000;
+    background-image: url(../images/corners.gif);
+	width:160px;
+	height:18px;
+}
+
+.txtBoxStyle1{
+    border-top: 1px solid #7f9db9; 
+    border-bottom: 1px solid #7f9db9;
+    border-left: 1px solid #7f9db9;
+    border-right: 1px solid #7f9db9;
+	padding-left: 2px;
+    background-color: #ffffff;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000;
+    background-image: url(../images/corners.gif);
+	width:160px;
+	height:18px;
+}
+.txtBoxStyle2{
+    border-top: 1px solid #7f9db9; 
+    border-bottom: 1px solid #7f9db9;
+    border-left: 1px solid #7f9db9;
+    border-right: 1px solid #7f9db9;
+	padding-left: 2px;
+    background-color: #ffffff;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000;
+    background-image: url(../images/corners.gif);
+	width:165px;
+	height:18px;
+}
+/* submit/reset btn for form */
+.txtBoxStyle2B{
+    border-top: 1px solid #7f9db9;
+    border-bottom: 1px solid #7f9db9;
+    border-left: 1px solid #7f9db9;
+    border-right: 1px solid #7f9db9;
+	padding:0 auto 0 auto;
+    background-color: #eeeeee;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+	font-weight:bold;
+    color: #000000;
+	width:80px;
+	height:20px;
+	cursor:pointer;
+}
+/* textarea for form */	
+.txtBoxStyle4{
+    border-top: 1px solid #7f9db9;
+    border-bottom: 1px solid #7f9db9;
+    border-left: 1px solid #7f9db9;
+    border-right: 1px solid #7f9db9;
+	padding-left: 1px;
+    background-color: #ffffff;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000;
+    background-image: url(../images/grid.gif);
+	width:341px;
+	height:100px;
+    behavior: url(/behaviors/maxlength.htc);
+}
+
+	/*=============================*/
+	/* HEALTHY PASTA RECIPES       */
+	/*-----------------------------*/
+
+	/* HEALTHY PASTA RECIPES */
+	div#twoCol { width:514px; margin:0px auto; padding:0px 0; background:none; }
+	div#twoCol div#one { width:269px; padding:0 10px 10px 10px; background:none; float:left; }
+	div#twoCol div#two { width:215px; padding:25px 10px 10px 0px; background:none; float:right; }
+
+
+	/* PASTA PRONTO */
+	.demo-show { width: 534px; margin: 0em 0em; }
+	.demo-show h3 {
+		width:524px;
+		height:18px;
+		font-size:14px;
+		margin: 20px 0 0px 0;
+		padding: 5px;
+		background: #6f6e67;
+		border-top: 2px solid #56554c;
+		border-bottom: 2px solid #56554c;
+		color:#fff;
+		cursor:pointer;
+	}
+	.demo-show h3 div.title {
+		width:200px;
+		background:#6f6e67;
+		margin:0;
+		padding:0;
+		float:left;
+	}
+	.demo-show h3 div.expand {
+		width:130px;
+		background:#6f6e67;
+		color:#fff;
+		/*font-weight:normal;*/
+		margin:0;
+		padding:0;
+		float:right;
+		font-size:11px;
+		position:relative;
+		top:2px;
+	}
+	.demo-show h3 div.close {
+		display:none;
+		width:90px;
+		background:#6f6e67;
+		color:#fff;
+		/*font-weight:normal;*/
+		margin:0;
+		padding:0;
+		float:right;
+		font-size:11px;
+		position:relative;
+		top:2px;
+	}
+	.demo-show div {
+		background-color:#eeeeee;
+		margin:0 0 0px 0;
+		/*padding: 10px 10px;*/
+		padding: 0px;
+	}
+	div#defaultColors div#threeCol { width:514px; margin:0px auto; padding:10px 0; background-color:#eeeeee; }
+	div#defaultColors div#threeCol div#one { width:151px; padding:10px; background-color:#ff0000; float:left; }
+	div#defaultColors div#threeCol div#two { width:152px; padding:10px; background-color:#ff5500; float:left; }
+	div#defaultColors div#threeCol div#three { width:151px; padding:10px; background-color:#ff8800; float:right; }
+	div#pantry div#threeCol { width:514px; margin:0px auto; padding:10px 0; background:none; }
+	div#pantry div#threeCol h4 { font-size:12px; font-weight:bold; margin:20px 0 6px 0; padding:2px 5px;
+								 background: #ddd; border-bottom: 1px solid #999; }
+	div#pantry div#threeCol div#one { width:151px; padding:10px; background:none; float:left; }
+	div#pantry div#threeCol div#two { width:152px; padding:10px; background:none; float:left; }
+	div#pantry div#threeCol div#three { width:151px; padding:10px; background:none; float:right; }
+	div#pantry div#note { margin:5px 0 0 0; padding:10px 5px 5px 5px; border-top:1px solid #999; }
+	div#refrigerator div#threeCol { width:514px; margin:0px auto; padding:10px 0; background:none; }
+	div#refrigerator div#threeCol div#one { width:151px; padding:10px; background:none; float:left; }
+	div#refrigerator div#threeCol div#two { width:152px; padding:10px; background:none; float:left; }
+	div#refrigerator div#threeCol div#three { width:151px; padding:10px; background:none; float:right; }
+	div#refrigerator div#note { margin:5px 0 0 0; padding:10px 5px 5px 5px; border-top:1px solid #999; }
+	div#freezer div#threeCol { width:514px; margin:0px auto; padding:10px 0; background:none; }
+	div#freezer div#threeCol div#one { width:151px; padding:10px; background:none; float:left; }
+	div#freezer div#threeCol div#two { width:152px; padding:10px; background:none; float:left; }
+	div#freezer div#threeCol div#three { width:151px; padding:10px; background:none; float:right; }
+	/** Uordered List ***********/
+	.ul_stockers { list-style:square; margin:0 0 0 40px; padding:0; }
+	.ul_stockers li { margin:0px 0 5px -20px; }
+	
+	
+	/* NO-RECIPE RECIPES */
+	/* --- tabbedNav style */
+	div.tabbedNav {
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		font-size:12px;
+		margin:0;
+		width:534px;
+		height:34px;
+
+	}
+	div.tabbedNav ul {
+		margin:0;
+		padding:0px;
+		list-style:none;
+		height:34px;
+	}
+	div.tabbedNav li {
+		display:inline;
+		margin:0px;
+		padding:0px;
+	}
+	div.tabbedNav a {
+		float:left;
+		font-size:12px;
+		font-weight:bold;
+		text-decoration:none;
+
+	}
+	div.tabbedNav a span {
+		display:block;
+		background:url(../images/tabbedCorner.gif) no-repeat right top;
+		background-color:#999999;
+		margin:0 5px 0 0;
+		padding:10px 10px 10px 10px;
+	}
+	div.tabbedNav a:link span {
+		color:#ffffff;
+		text-decoration:none;
+	}
+	div.tabbedNav a:visited span {
+		color:#000000;
+		text-decoration:none;
+	}
+	div.tabbedNav a:focus {
+		outline:0;
+	}
+	div.tabbedNav a:hover span {
+		color:#fdbc13;
+
+	}
+	div.tabbedNav li a.selected span {
+		color:#000000;
+		background-color:#cccccc;
+		background-position: 100% -34px;
+	}
+	
+	div.tabs {
+		width:514px;
+		margin:0  0 20px 0;
+	}
+	
+	div.tabs > div {
+		width:514px;
+		margin-top: 0px;
+		/*border: 5px solid #333;*/
+	}
+	#first {
+		background-color: #ccc;
+		padding: 10px;
+	}
+	#second {
+		background-color: #ccc;
+		padding: 10px;
+	}
+	#third {
+		background-color: #ccc;
+		padding: 10px;
+	}
+	
+	/*=============================*/
+	/* BLOGGER - Seven Icons       */
+	/*-----------------------------*/
+	#iconLine {
+	width:259px;
+	margin:4px 0;
+	}
+	#iconLine #nav {
+		list-style-image:none;
+		list-style-position:outside;
+		list-style-type:none;
+		margin:0;
+		padding:0px;
+	}
+	#iconLine #nav li {
+		float:left;
+		margin:0px;
+		padding:0px;
+		list-style:none;
+	}
+	#iconLine #nav li a {
+		display:block;
+		outline:none;
+		width:37px;
+		height:37px;
+		background:transparent;
+		vertical-align:middle;
+		text-decoration:none;
+		color:#5e5e5e;
+		background: url(../images/sprite_blogTags_v02b.gif);
+	}
+	#iconLine #nav li.lowDigest a {
+		background-position: 0px 0px;
+	}
+	#iconLine #nav li.lowDigest a:hover {
+		background-position: -50px 0px;
+	}
+	#iconLine #nav li.lowDigest a:active {
+		background-position: -100px 0px;
+	}
+	#iconLine #nav li.lowCalorie a {
+		background-position: 0px -50px;
+	}
+	#iconLine #nav li.lowCalorie a:hover {
+		background-position: -50px -50px;
+	}
+	#iconLine #nav li.lowCalorie a:active {
+		background-position: -100px -50px;
+	}
+	#iconLine #nav li.lowChol a {
+		background-position: 0px -100px;
+	}
+	#iconLine #nav li.lowChol a:hover {
+		background-position: -50px -100px;
+	}
+	#iconLine #nav li.lowChol a:active {
+		background-position: -100px -100px;
+	}
+	#iconLine #nav li.lowFat a {
+		background-position: 0px -150px;
+	}
+	#iconLine #nav li.lowFat a:hover {
+		background-position: -50px -150px;
+	}
+	#iconLine #nav li.lowFat a:active {
+		background-position: -100px -150px;
+	}
+	#iconLine #nav li.lowSat a {
+		background-position: 0px -200px;
+	}
+	#iconLine #nav li.lowSat a:hover {
+		background-position: -50px -200px;
+	}
+	#iconLine #nav li.lowSat a:active {
+		background-position: -100px -200px;
+	}
+	#iconLine #nav li.lowSodium a {
+		background-position: 0px -250px;
+	}
+	#iconLine #nav li.lowSodium a:hover {
+		background-position: -50px -250px;
+	}
+	#iconLine #nav li.lowSodium a:active {
+		background-position: -100px -250px;
+	}
+	#iconLine #nav li.highFiber a {
+		background-position: 0px -300px;
+	}
+	#iconLine #nav li.highFiber a:hover {
+		background-position: -50px -300px;
+	}
+	#iconLine #nav li.highFiber a:active {
+		background-position: -100px -300px;
+	}
+	#iconLine #nav li a span {
+		margin-left:-3000px;
+	}
+	#iconLine #nav li.selected a em {
+		font-weight:bold;
+	}
+	
+	/*=============================*/
+	/* RECIPE Blogger (print)      */
+	/*-----------------------------*/
+
+	body#blog {						background-color:#fff; }
+	body#blog #header { 			display:none; }
+	body#blog #header_print { 		display:block; width:574px; margin:10px auto 10px auto; }
+	body#blog .mainNav_BG {	 		display:none; }
+	body#blog #left { 				display:none; }
+	body#blog #comments { 			display:none; }
+	body#blog #footerLinks { 		display:none; }
+	body#blog #footerBar {	 		display:none; }
+	body#blog #blog_PrintShare { 	display:none; }
+	body#blog #blog_starsShare { 	display:none; }
+	body#blog #blog_ItemControl { 	display:none; }
+	body#blog #blog_dividerHoriz { 	display:none; }
+	body#blog .item-control { 		display:none; }
+	body#blog .blogger-labels {		color:#FF0000; display:none;/* hide labels */ }
+	body#blog #btnVid { 			height:10px; margin:0; padding:0; }
+	body#blog #btnVid ul#nav { 		display:none; }
+	body#blog #stwrapper { 			display:none; } /* ShareThis Wrapper */
+	body#blog #div_permalink { 		width:574px; text-align:left; margin:10px 0 0 0; }
+	body#blog #col_left {	 		width:574px; margin:0 auto; background:#fff; }
+	body#blog #body { 				width:576px; margin:0 auto; padding:1px 0; background-color:#000; }

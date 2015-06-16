@@ -1,0 +1,264 @@
+
+// VARIABLES
+// ============================================================
+
+	// COLORS
+	@textdefault:		#302014;
+	@textblue:			#034ea1;
+	@textorange:		#c6792c;
+	@textred:			#b62d26;
+	
+	@orange:			#c6792c;
+	@blue:				#034ea1;
+	@red:				#b62d26;
+	@cream:				#f9f3e8;
+	@cream-darker:		#f1e2c8;
+	@green:				#638042;
+	
+	@nav_light:			#e8ded1;
+	@nav_dark:			#cfc0b0;
+	@nav_line:			#bab2a7;
+	@btn_txt_gray:		#666666;
+	
+	
+	@accent:			@blue;
+	
+	@black:				#000000;
+	@darkgray:			#404040;
+	@gray:				#808080;
+	@lightgray:			#c0c0c0;
+	@white:				#ffffff;
+	
+	@trans-light:		rgba(0,0,0,.25);
+	@trans-med:			rgba(0,0,0,.5);
+	@trans-dark:		rgba(0,0,0,.75);
+
+	
+	// FONTS
+	@bodyfont:			Arial, "Helvetica Neue", Helvetica, sans-serif;
+	@headingfont:		Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+
+
+	// LAYOUT
+	@baseline:			20px;
+	@spacer:			10px;	
+	
+
+	
+	
+// UTILITY MIXINS
+// ============================================================
+
+	.clearfix {
+		*zoom:1;
+		
+		&:before,
+		&:after {
+			content:"";
+			display:table;
+		}
+		&:after {
+			clear:both;
+		}
+	}
+	
+	.nowrap {
+		white-space: nowrap;
+	}
+	
+	.ir { // Scott Kellum Method
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	
+	.list-plain {
+		list-style: none;
+		padding-left: 0;
+	}
+	
+	.hide {
+		display: none;
+	}
+	
+	.right {
+		float: right;
+	}
+	.left {
+		float: left;
+	}
+	
+	.inset-box-shadow(@horizontal: 0, @vertical: 2px, @blur: 3px, @r: 0, @g: 0, @b: 0, @alpha: 0.3) {
+	  -moz-box-shadow: inset @horizontal @vertical @blur rgba(@r, @g, @b, @alpha);
+	  -o-box-shadow: inset @horizontal @vertical @blur rgba(@r, @g, @b, @alpha);
+	  -webkit-box-shadow: inset @horizontal @vertical @blur rgba(@r, @g, @b, @alpha);
+	  box-shadow: inset @horizontal @vertical @blur rgba(@r, @g, @b, @alpha);
+	}
+	
+	.inner-shadow(@color) {
+		.background-image(
+			//linear-gradient(to left, fade(@color, 30%) 0px, fade(@color, 10%) 15px, fade(@color, 0%) 75px),
+			//linear-gradient(to right, fade(@color,30%) 0px, fade(@color, 10%) 15px, fade(@color, 0%) 75px),
+			//linear-gradient(to top, fade(@color, 30%) 0px, fade(@color, 10%) 15px, fade(@color, 0%) 75px),
+			linear-gradient(to bottom, fade(@color, 60%) 0px, fade(@color, 30%) 150px, fade(@color, 0%) 250px)
+		);
+		.box-shadow(inset 0 0 75px fade(@color, 60%)); // basically same effect as above, but plays nicer with IE
+	}
+	
+	
+// PARAMETRIC MIXINS
+// ============================================================
+
+	.font-size(@fontsize) {
+		font-size: (1px * unit(@fontsize));
+		font-size: (.0625rem * unit(@fontsize)); // root font size == 16px
+	}
+	
+	.line-height(@lineheight) {
+		line-height: (1px * unit(@lineheight));
+		line-height: (.0625rem * unit(@lineheight)); // root font size == 16px
+	}
+	
+	.col-span(@span: 1, @cols: 1) {
+		width: (@span * (100% / @cols));
+		float: left;
+	}
+	
+	.col-remove {
+		width: auto;
+		float: none;
+	}
+	
+	.col-push-left(@span, @cols) {
+		margin-left: (@span * (100% / @cols));
+	}
+	
+	.col-push-right(@span, @cols) {
+		margin-right: (@span * (100% / @cols));
+	}
+	
+	
+	
+// OBJECT MIXINS
+// ============================================================
+	
+	.btn(btnblue) {
+		background: @accent;
+		border: 1px solid darken(@accent, 20%);
+		color: @white;
+		
+		&:hover, 
+		&:focus, 
+		&:active {
+			color: @white;
+			background: darken(@accent, 5%);
+			.inset-box-shadow(0, 5px, 14px, 0, 0, 0, 0.4);
+		}
+		
+		span.arrow {
+			width: 19px;
+			height: 19px;
+			display: inline-block;
+			position: relative;
+			top: 4px;
+			left: 7px;
+			background: url("../../_img/sprite_main_2014_10_01.png") no-repeat;
+			background-position: -200px 0px;
+		}
+	}
+	.btn(btnwhite) {
+		background: @white;
+		border: 1px solid @orange;
+		color: @btn_txt_gray;
+		
+		
+		@the_red: 198;
+		@the_green: 121;
+		@the_blue: 44;
+		@the_white: 255;
+		
+		.inset-box-shadow(0, 2px, 10px, @the_white, @the_white, @the_white, 1);
+		
+		&:hover, 
+		&:focus, 
+		&:active {
+			//color: darken(@btn_txt_gray, 30%);
+			color: darken(@orange, 5%);
+			.inset-box-shadow(0, 5px, 10px, @the_red, @the_green, @the_blue, 0.25);
+			
+			/*
+			.background-image(
+				linear-gradient(to bottom, fade(@white, 20%) 0px, fade(@white, 6%) 10px, fade(@white, 0%) 25px)
+			);
+			*/
+		}
+		
+		span.arrow {
+			width: 19px;
+			height: 19px;
+			display: inline-block;
+			position: relative;
+			top: 4px;
+			left: 7px;
+			background: url("../../_img/sprite_main_2014_10_01.png") no-repeat;
+			background-position: -220px 0px;
+		}
+	}
+	/* universal button styles below*/
+	.btn(@_) {
+		width: 100%;
+		height: (@baseline*2.00);
+		.border-radius(~"4px");
+		//.box-shadow(~"0 2px 4px rgba(0,0,0,0.25)");
+		.transition(~"color 0.25s ease-out, background 0.25s ease-out, box-shadow 0.25s ease-out");
+		
+		font-family: @headingfont;
+		font-weight: bold;
+		.font-size(20);
+		
+		/* for anchor tags */
+		display: inline-block;
+		line-height: (@baseline*1.9);
+		text-decoration: none;
+		text-align: center;
+	}
+	
+	
+	// FORM ELEMENTS
+	.input(default) {
+		border: 1px solid @textdefault;
+		background: @nav_light;
+		color: @textdefault;
+	}
+	.input(green) {
+		border: 1px solid darken(@green, 30%);
+		background: lighten(@green, 50%);
+		color: @black;
+	}
+	.input(@_) {
+		width: 100%;
+		height: (@baseline*2.00);
+		.border-radius(~"2px");
+		
+		font-family: @bodyfont;
+		.font-size(15);
+		padding: 10px 10px;
+		
+	}
+	input {
+		.input(default);
+	}
+	input[type="checkbox"] {
+		width: auto;
+		height: auto;
+		margin-top: 10px;
+	}
+	input[type="radio"] {
+		width: auto;
+		height: auto;
+		margin-bottom: 20px;
+	}
+	select {
+		padding: 0 0 0 10px !important;
+	}
+	

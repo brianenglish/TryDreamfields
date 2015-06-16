@@ -1,0 +1,1389 @@
+@import "normalize";
+@import "lesshat";
+@import "helpers";
+@import "elements";
+
+
+
+// MAIN STYLES
+// ============================================================
+	
+	body {
+		background: url(../_img/bg_tile_v01.jpg);		
+	}
+	
+	h1 {
+		.font-size(29);
+		.line-height(28);
+		text-align: left;
+
+		a, a:hover {
+			color: @orange;
+			text-decoration: none;
+		}
+	}
+	
+	// HYPERLINK
+	.hyperlink {
+		color: @accent;
+		text-decoration: underline;
+		.transition(~"color 0.25s ease-out, background 0.25s ease-out");
+		
+		&:hover, &:focus, &:active {
+			color: darken(@accent, 5%);
+			outline: 0;
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	// Pinterest buttons, no background transition
+	span.no-CSS-transition a {
+		.transition(~"color 0.25s ease-out");
+	}
+	
+	// OL  and  ULs
+	ol.main, ul.main {
+		margin: 20px 0 20px 20px ;
+		li {
+			padding: 0 0 10px 0;
+		}
+		li:last-of-type {
+			padding: 0;
+		}
+	}
+	
+	// ShareThis
+	.share {
+		.font-size(11);
+		font-weight: bold;
+		text-transform: uppercase;
+		top: -4px;
+		margin-right: 5px;
+		position: relative;
+	}
+	.st_fblike {
+		top: -5px;
+		position: relative;
+	}
+	
+	.disclaimer {
+		.font-size(13);
+		.line-height(16);
+		
+	}
+	span.asterisk {
+		color: @red;
+	}
+	.btn-blue {
+		@type: btnblue;
+		.btn(@type);
+	}
+	.btn-white {
+		@type: btnwhite;
+		.btn(@type);
+	}
+	
+	// form code, HTML5 placeholder on text input
+	.empty {
+		//color: #ff0000 !important;
+		color: @darkgray !important;
+	}
+	input {
+		.placeholder(@darkgray);
+	}
+	
+	label.error {
+		color: #ff0000;
+		font-weight: bold;
+		text-transform: uppercase;
+		.font-size(13);
+		width: 100%;
+		display: block;
+		.clearfix;
+	}
+	
+	.container {
+		width: 100%;
+		max-width: 956px;
+		margin: 0 auto 30px auto; 
+		position: relative;
+	}
+	
+	.greenbox {
+		background-color: @green;
+		.inner-shadow(@black);
+	}
+	
+	.show_mobile {
+		display: inline-block;
+	}
+	.show_desktop {
+		display: none;
+	}
+	
+	.site_header {
+		position: relative;	
+		z-index: 10;
+		
+		top: -88px;
+		
+		.site_logo a {
+			.ir;
+			
+			width: 140px;
+			height: 140px;
+			display: block;
+			margin: -5px 0 0 -70px;
+			position: absolute;
+			top: 0px; 
+			left: 50%;
+			background: url("../_img/logo-sm.png") no-repeat;
+		}
+		
+		.topnav {
+			float: right;
+			position: relative;
+			top: 46px;
+			right: 26px;
+			
+			.topnav_items {
+				display: none;
+			}
+			
+			
+			a.nav_toggle {
+				.ir;
+				
+				width: 32px;
+				height: 25px;
+				display: block;
+				margin: 0;
+				
+				background: url("../_img/sprite_main_2015_02_13.png") no-repeat;
+			}
+			
+			a.social_FB, a.social_Tw, a.social_Pinterest, a.social_Instagram {
+				display: none;
+			}
+		}
+		
+	}
+	
+
+	
+	.site_body {
+	
+		background-color: @cream;
+		margin: 93px 0 0 0;
+		padding: 5px 0;
+		
+		.background-image(
+			linear-gradient(to top, rgba(230,204,159,1) 0px,rgba(249,242,232,0) 20px),
+			linear-gradient(to bottom, rgba(230,204,159,1) 0px,rgba(249,242,232,0) 20px)
+		);
+		.box-shadow(0px 2px 3px rgba(0,0,0,0.3));
+
+		
+		#border-gold {
+			border-top: 1px solid @orange;
+			border-bottom: 1px solid @orange;
+			padding: 20px 0;	
+		}
+		
+		.site_nav {
+			width: 100%;
+			height: 0;
+			overflow: hidden;
+			.transition(~"height .25s, padding .25s");
+			padding: 0px 10px;
+			
+			font-family: @headingfont;
+			.font-size(18);
+			font-weight: bold;
+
+			.clearfix;
+			.show_nav &  {
+				position: relative;
+				padding: 5px 10px;
+				height: 161px;  // was 182px
+				
+			}
+			
+			.column {
+				float: left;
+				width: 50%;
+				padding: 0px;
+				
+			}
+			.first  {
+				border-right: 1px solid @nav_line;
+			}
+			
+			ul {
+				.list-plain;
+				.clearfix;
+				margin: 0 0 0 0px;
+
+				
+			}
+			
+			li {
+				padding: 0px;
+				border-top: 1px solid @nav_line;
+				text-align: center;
+				background-color: @nav_light;
+			}
+			
+			li:last-of-type {
+				border-bottom: 1px solid @nav_line;
+			}
+			
+			.active {
+				/* Use this .active class to mark active item in main nav */
+				background-color: @nav_dark;
+			}		
+			
+			a {
+				padding: 5px;
+				display: block;
+				text-decoration: none;
+				color:  @black;
+
+
+				
+				&:hover, 
+				&:focus, 
+				&:active {
+					.active;
+				}
+				
+
+			}
+		}
+		
+		.main-content {
+			padding: 30px 20px 30px 20px;
+			
+			body.home site-body & {
+				padding: 150px 20px 30px 20px;
+			}
+			
+			.ca_special {
+				background-color: @cream-darker;
+				margin: 0 -20px 20px -20px;
+				padding: 20px 30px 10px 30px;
+				border-top: 1px solid @orange;
+				border-bottom: 1px solid @orange;
+			}
+			
+			.videoWrapper {
+				position: relative;
+				padding-bottom: 56.25%; /* 16:9 */
+				padding-top: 25px;
+				height: 0;
+			}
+			.videoWrapper iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+			
+		}
+		
+		.site_footer {
+			clear: both;
+			
+			.footer_nav {
+				
+				.nav_border {
+					background-color: @nav_light;
+					padding: 30px 20px;
+					border-top: 1px solid @orange;
+				}
+				
+				a, a span {
+					.hyperlink;
+					text-decoration: none !important;
+					
+					&:hover {
+						text-decoration: underline !important;
+					}
+					
+				}
+				
+				ul {
+					width: 280px;
+					.column-count(2);
+					.column-gap(0px);
+					margin: 0 auto;
+					padding: 0;
+					list-style-position: inside;
+					
+					
+					
+				}
+				
+				
+				
+				.social {
+					width: 272px;
+					margin: 20px auto 0  auto;
+					.clearfix;					
+					
+					.flags {
+						width: 272px;
+						margin: 0px auto 20px auto;
+					
+					}
+					
+					a.social_FB, a.social_Tw, a.social_YT, a.social_Pinterest, a.social_Instagram, a.social_RSS, a.flag_esp {
+						.ir;
+						
+						width: 30px;
+						height: 30px;
+						display: block;
+						margin: 0;
+						float: left;
+						margin-right: 18px;
+						
+						background: url("../_img/sprite_main_2015_02_13.png") no-repeat;
+						
+						&:hover {
+							//margin-top: -1px;
+							position: relative;
+							top: -1px;
+							z-index: 10;
+						}
+					}
+					a.social_FB {
+						background-position: 0px -70px;
+					}
+					a.social_Tw {
+						background-position: -40px -70px;
+					}
+					a.social_YT {
+						background-position: -80px -70px;
+					}
+					a.social_Pinterest {
+						background-position: -120px -70px;
+					}	
+					a.social_Instagram {
+						background-position: -160px -70px;
+					}
+					a.social_RSS {
+						background-position: -200px -70px;
+						margin-right: 0;
+					}
+					a.flag_esp {
+						width: 26px;
+						height: 17px;
+						background-position: 0px -40px;
+						margin: 0px 5px 0 0;
+						top: 5px;
+						position: relative;
+						
+						&:hover {
+							margin-top: 0px;
+						}
+					}
+				}
+
+				.convo {
+					margin: 20px auto 0 auto;
+					max-width: 360px;
+					img {
+						width: 100%;
+						height: auto;
+					}
+				}
+				
+				.address {
+					
+					.font-size(16px);
+					font-weight: bold;
+					color: @orange;
+					//text-align: center;
+					padding: 15px 40px 15px 40px;
+					border-top: 1px solid @orange;
+					border-bottom: 1px solid @orange;
+					overflow: auto;
+					
+					a {
+						color: @orange;
+						text-decoration: none;
+						
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+					
+					div {
+						//padding: 0 30px 0 0;
+						.nowrap;
+						text-align: left;
+
+						&#company {
+							.col-span (1,1);
+							clear: both;
+							padding: 0px 0 0 0;
+							
+							
+						}
+						&#number {
+							.col-span (1,1);
+							clear: both;
+							padding: 20px 0 0 0;
+						}
+						&#city {
+							.col-span (1,1);
+							clear: both;
+							padding: 20px 0 0 0;
+						}
+						&#phone {
+							.col-span(1,1);
+							clear: both;
+							padding: 20px 0 0 0;
+						}
+						
+						
+						small {
+							.font-size(9px);
+							display: block;
+							padding: 0;
+							margin-top: -5px;
+							color: @orange;
+						}
+						
+					}
+				
+				}
+			
+			}
+			
+			
+			
+		}
+		
+	}
+	
+	.copyright {
+		width: 240px;
+		.font-size(14);
+		text-transform: uppercase;
+		margin: 0 auto;
+	}
+
+	
+	
+// RESPONSIVE
+// ============================================================
+	
+@media only screen and (min-width: 481px) {
+}
+@media only screen and (min-width: 640px) {
+
+	.site_header {
+		
+		top: -65px;
+		
+		.site_logo a {
+			width: 190px;
+			height: 190px;
+			position: absolute; 
+			top: 0px; 
+			left: 70px;
+			background: url("../_img/logo-med.png") no-repeat;
+		}
+		
+		.topnav {
+			
+			position: relative;
+			top: 27px;
+			right: 10px;
+			
+		}
+		
+	}
+	
+	.site_body {
+		margin: 63px 0 0 0;
+		padding: 5px;
+		
+		.background-image(
+			linear-gradient(to left, rgba(230,204,159,1) 0px, rgba(249,242,232,0) 27px),
+			linear-gradient(to right, rgba(230,204,159,1) 0px, rgba(249,242,232,0) 20px),
+			linear-gradient(to top, rgba(230,204,159,1) 0px, rgba(249,242,232,0) 20px),
+			linear-gradient(to bottom, rgba(230,204,159,1) 0px, rgba(249,242,232,0) 20px)
+		);
+		.box-shadow(0px 2px 3px rgba(0,0,0,0.3));
+
+		
+		#border-gold {
+			border: 1px solid @orange;
+			padding: 20px;	
+		}
+		
+		.site_nav {
+			width: 80%; /* was auto */
+			float: right;
+			margin-bottom: 0px;
+		}
+		
+		.main-content {
+			.clearfix;
+			margin: 100px 0 0 0;
+			padding: 0 10px 30px 10px;
+			clear: both;
+			
+			body.home & & {
+				margin: 30px 0 0 0;
+			}
+			
+			.ca_special {
+				margin: 0 -30px 20px -30px;
+			}
+		}
+		
+		.site_footer {
+			
+			.footer_nav {
+				
+				height: auto;
+				
+				.ftrnav {
+					float: none;
+				}
+				
+				ul {
+					width: 390px;
+					margin: 0 auto;
+					.column-count(3);
+					.column-gap(20px);
+				}
+				
+				
+				.social {
+					width: 272px;
+					.clearfix;
+					margin-top: 0px auto;
+					
+					a.social_FB, a.social_Tw, a.social_YT, a.social_Pinterest, a.social_Instagram, a.social_RSS {
+						margin: 0 18px 5px 0;
+					}
+
+					a:last-of-type {
+						margin-right: 0;
+					}
+				}
+				
+				
+				
+				.address {
+					
+					padding: 15px 40px 15px 40px;
+					
+					.font-size(16);
+					clear: both;
+					border-top: 1px solid @orange;
+					border-right: 1px solid @orange;
+					border-bottom: 1px solid @orange;
+					border-left: 1px solid @orange;
+					
+					div {
+						//padding: 0 30px 0 0;
+						.nowrap;
+						text-align: left;
+
+						&#company {
+							.col-span (1,2);
+							clear: none;
+							padding: 0;
+						}
+						&#number {
+							.col-span (1,2);
+							clear: none;
+							padding: 0;
+						}
+						&#city {
+							.col-span (1,2);
+							clear: both;
+							padding: 20px 0 0 0;
+						}
+						&#phone {
+							.col-span (1,2);
+							clear: none;
+							padding: 20px 0 0 0;
+						}
+						
+					}
+				
+				}					
+			}
+			
+		}
+		
+	}
+	
+	.copyright {
+		width: 240px;
+		margin: 0  0 0 5px;
+	}
+}
+@media only screen and (min-width: 768px) {
+	
+	h1 {
+		.font-size(45);
+		.line-height(44);
+		text-align: left;
+		
+		&.smaller {
+			.font-size(41);
+			.line-height(39);
+		}
+	}
+	
+	
+	
+	.site_body {
+		
+		.site_footer {
+			
+			.footer_nav {
+				
+				ul {
+					width: 280px;
+					//height: 90px;
+					.column-count(2);
+					.column-gap(20px);
+					float: left;
+					margin: 0;
+				}
+				
+				.social {
+
+					br.ftr_FindUs{
+						line-height: 25px;
+					}
+					width: 76px;
+					float: right;
+					margin: 0;
+
+					line-height: 16px;
+
+					a.social_FB, a.social_Tw, a.social_YT, a.social_Pinterest, a.social_Instagram, a.social_RSS {
+						margin: 0 5px 5px 0;
+					}
+				}
+				.convo {
+					width: 270px;
+					float: right;
+					margin: 0 20px 0 0;
+				}
+				
+				.address {
+					
+					div {
+						//padding: 0 30px 0 0;
+						.nowrap;
+						text-align: left;
+
+						&#company {
+							.col-span (1,2);
+						}
+						&#number {
+							.col-span (1,2);
+							
+						}
+						&#city {
+							.col-span (1,2);
+							clear: both;
+							padding: 20px 0 0 0;
+						}
+						&#phone {
+							clear: none;
+							padding: 20px 0 0 0;
+						}
+						
+						
+					}
+					
+				}
+				
+				
+				
+			}
+			
+		}
+		
+	}
+}
+@media only screen and (min-width: 832px) {
+	//main nav for tablets
+	.site_body {
+		
+		.site_nav {
+			width: auto;
+			display: block;
+			overflow: visible;
+			
+			position: absolute;
+			padding: 0;
+			height: auto;
+			
+			right: 0px;
+			margin: 0 6px 0 0;
+			float: right;
+			.font-size(17);
+			
+			.show_nav &  {
+				position: absolute;
+				padding: 0;
+				height: auto;
+				
+				
+			}
+			.nav_mobile {
+				display: none;
+			}
+			.nav_border {
+				border-top: 1px solid @orange;
+				border-bottom: 1px solid @orange;
+				padding: 1px 1px 1px 0;
+				height: 54px;
+			}
+			
+			.column {
+				width: auto;
+				float: left;
+				
+			}
+			
+			.first {
+				border-right: none;
+			}
+			.first li:first-of-type {
+				display: none;  // might want to bring this back after main nav fills up again
+			}
+			
+			li {
+				width: auto;
+				float: left;
+				border: none;
+				margin: 0;
+				padding: 0;
+			}			
+			
+
+			
+			li:last-of-type {
+				border-bottom: none;
+			}
+			
+			li a {
+				height: 50px;
+				padding: 13px 8px 0 8px;
+				border-right: 1px solid @nav_line;
+				display: block;
+
+			}
+			
+			// When Expert Q&A comes back, change li:nth-of-type to 2, not 1
+			.column:nth-of-type(2) li:nth-of-type(2) a  {
+				padding-right: 15px;
+				border-right: none;
+			}
+			
+		}
+	}
+
+	.site_header {
+		
+		.topnav {
+			
+			top: 23px;
+			right: 10px;
+			
+			.topnav_items {
+				display: block;
+				float: left;
+				margin: 5px 6px 0 0;
+				font-family: @headingfont;
+				.font-size(21);
+				font-weight: bold;
+			}
+			.topnav_items a {
+				color: @trans-dark;
+				text-decoration: none;
+			}
+			
+			a.nav_toggle {
+				display: none;
+			}
+			
+			a.social_FB, a.social_Tw, a.social_Pinterest, a.social_Instagram {
+				.ir;
+				
+				width: 32px;
+				height: 32px;
+				display: block;
+				margin: 0;
+				float: left;
+				margin-right: 10px;
+				
+				background: url("../_img/sprite_main_2015_02_13.png") no-repeat;
+				
+				
+			}
+			a.social_FB {
+				background-position: -80px 0px;
+			}
+			a.social_Tw {
+				background-position: -120px 0px;
+			}
+			a.social_Pinterest {
+				background-position: -160px 0px;
+			}
+			a.social_Instagram {
+				background-position: -320px 0px;
+				margin-right: 1px;
+			}
+			
+		}
+		
+	}
+}
+@media only screen and (min-width: 900px) {
+
+	.show_mobile {
+		display: none;
+	}
+	.show_desktop {
+		display: inline-block;
+	}
+	
+	.site_header {
+		
+		.topnav {
+			right: 0px;
+		}
+		
+	}
+	
+	.site_body {
+		
+		.site_nav {
+			
+			width: auto;
+			
+			.first li:first-of-type {
+				display: block;
+			}
+			
+
+			
+			
+		}
+	
+		.site_footer {
+			
+			.footer_nav {
+				
+				ul {
+					width: 320px;
+				}
+				
+				
+				.address {
+					
+					div {
+						//padding: 0 30px 0 0;
+						.nowrap;
+						text-align: left;
+						
+
+						&#company {
+							.col-span (8,28);
+						}
+						&#number {
+							.col-span (9,28);
+						}
+						&#city {
+							.col-span (7,28);
+							clear: none;
+							padding: 0;
+						}
+						&#phone {
+							.col-span(4,28);
+							padding: 0;
+						}
+
+						
+					}
+					
+				}
+				
+				
+			}
+			
+		}
+	
+	}
+}
+@media only screen and (min-width: 1024px) {
+}
+	
+	
+// REPEAT RESPONSIVE FOR IE7 AND 8
+// ------------------------------------------------
+	
+.lt-ie9 {
+
+	.site_header {
+		
+		top: -65px;
+		
+		.site_logo a {
+			width: 190px;
+			height: 190px;
+			position: absolute; 
+			top: 0px; 
+			left: 70px;
+			background: url("../_img/logo-med.png") no-repeat;
+		}
+		
+		.topnav {
+			
+			position: relative;
+			top: 27px;
+			right: 10px;
+			
+		}
+		
+	}
+	
+	.site_body {
+		margin: 63px 0 0 0;
+		padding: 5px;
+		
+		.background-image(
+			linear-gradient(to left, rgba(230,204,159,1) 0px, rgba(249,242,232,0) 27px),
+			linear-gradient(to right, rgba(230,204,159,1) 0px, rgba(249,242,232,0) 20px),
+			linear-gradient(to top, rgba(230,204,159,1) 0px, rgba(249,242,232,0) 20px),
+			linear-gradient(to bottom, rgba(230,204,159,1) 0px, rgba(249,242,232,0) 20px)
+		);
+		.box-shadow(0px 2px 3px rgba(0,0,0,0.3));
+
+		
+		#border-gold {
+			border: 1px solid @orange;
+			padding: 20px;	
+		}
+		
+		.site_nav {
+			width: 80%; /* was auto */
+			float: right;
+			margin-bottom: 0px;
+		}
+		
+		.main-content {
+			.clearfix;
+			margin: 100px 0 0 0;
+			padding: 0 10px 30px 10px;
+			clear: both;
+			
+			body.home & & {
+				margin: 30px 0 0 0;
+			}
+			
+			.ca_special {
+				margin: 0 -30px 20px -30px;
+			}
+		}
+		
+		.site_footer {
+			
+			.footer_nav {
+				
+				height: auto;
+				
+				.ftrnav {
+					float: none;
+				}
+				
+				ul {
+					width: 390px;
+					margin: 0 auto;
+					.column-count(3);
+					.column-gap(20px);
+				}
+				
+				
+				.social {
+					width: 272px;
+					.clearfix;
+					margin-top: 0px auto;
+					
+					a.social_FB, a.social_Tw, a.social_YT, a.social_Pinterest, a.social_Instagram, a.social_RSS {
+						margin: 0 18px 5px 0;
+					}
+
+					a:last-of-type {
+						margin-right: 0;
+					}
+				}
+				
+				
+				
+				.address {
+					
+					padding: 15px 40px 15px 40px;
+					
+					.font-size(16);
+					clear: both;
+					border-top: 1px solid @orange;
+					border-right: 1px solid @orange;
+					border-bottom: 1px solid @orange;
+					border-left: 1px solid @orange;
+					
+					div {
+						//padding: 0 30px 0 0;
+						.nowrap;
+						text-align: left;
+
+						&#company {
+							.col-span (1,2);
+							clear: none;
+							padding: 0;
+						}
+						&#number {
+							.col-span (1,2);
+							clear: none;
+							padding: 0;
+						}
+						&#city {
+							.col-span (1,2);
+							clear: both;
+							padding: 20px 0 0 0;
+						}
+						&#phone {
+							.col-span (1,2);
+							clear: none;
+							padding: 20px 0 0 0;
+						}
+						
+					}
+				
+				}					
+			}
+			
+		}
+		
+	}
+	
+	.copyright {
+		width: 240px;
+		margin: 0  0 0 5px;
+	}
+
+	
+	h1 {
+		.font-size(45);
+		.line-height(44);
+		text-align: left;
+		
+		&.smaller {
+			.font-size(41);
+			.line-height(39);
+		}
+	}
+	
+	
+	
+	.site_body {
+		
+		.site_footer {
+			
+			.footer_nav {
+				
+				ul {
+					width: 280px;
+					//height: 90px;
+					.column-count(2);
+					.column-gap(20px);
+					float: left;
+					margin: 0;
+				}
+				
+				.social {
+					br.ftr_FindUs{
+						line-height: 25px;
+					}
+					width: 76px;
+					float: right;
+					margin: 0;
+
+					line-height: 16px;
+
+					a.social_FB, a.social_Tw, a.social_YT, a.social_Pinterest, a.social_Instagram, a.social_RSS {
+						margin: 0 5px 5px 0;
+					}
+				}
+				.convo {
+					width: 270px;
+					float: right;
+					margin: 0 20px 0 0;
+				}
+				
+				.address {
+					
+					div {
+						//padding: 0 30px 0 0;
+						.nowrap;
+						text-align: left;
+
+						&#company {
+							.col-span (1,2);
+						}
+						&#number {
+							.col-span (1,2);
+							
+						}
+						&#city {
+							.col-span (1,2);
+							clear: both;
+							padding: 20px 0 0 0;
+						}
+						&#phone {
+							clear: none;
+							padding: 20px 0 0 0;
+						}
+						
+						
+					}
+					
+				}
+				
+				
+				
+			}
+			
+		}
+		
+	}
+
+	//main nav for tablets
+	.site_body {
+		
+		.site_nav {
+			width: auto;
+			display: block;
+			overflow: visible;
+			
+			position: absolute;
+			padding: 0;
+			height: auto;
+			
+			right: 0px;
+			margin: 0 6px 0 0;
+			float: right;
+			.font-size(17);
+			
+			.show_nav &  {
+				position: absolute;
+				padding: 0;
+				height: auto;
+				
+				
+			}
+			.nav_mobile {
+				display: none;
+			}
+			.nav_border {
+				border-top: 1px solid @orange;
+				border-bottom: 1px solid @orange;
+				padding: 1px 1px 1px 0;
+				height: 54px;
+			}
+			
+			.column {
+				width: auto;
+				float: left;
+				
+			}
+			
+			.first {
+				border-right: none;
+			}
+			.first li:first-of-type {
+				display: none;  // might want to bring this back after main nav fills up again
+			}
+			
+			li {
+				width: auto;
+				float: left;
+				border: none;
+				margin: 0;
+				padding: 0;
+			}			
+			
+
+			
+			li:last-of-type {
+				border-bottom: none;
+			}
+			
+			li a {
+				height: 50px;
+				padding: 13px 8px 0 8px;
+				border-right: 1px solid @nav_line;
+				display: block;
+
+			}
+			
+			// When Expert Q&A comes back, change li:nth-of-type to 2, not 1
+			.column:nth-of-type(2) li:nth-of-type(2) a  {
+				padding-right: 15px;
+				border-right: none;
+			}
+			
+		}
+	}
+
+	.site_header {
+		
+		.topnav {
+			
+			top: 23px;
+			right: 10px;
+			
+			.topnav_items {
+				display: block;
+				float: left;
+				margin: 5px 6px 0 0;
+				font-family: @headingfont;
+				.font-size(21);
+				font-weight: bold;
+			}
+			.topnav_items a {
+				color: @trans-dark;
+				text-decoration: none;
+			}
+			
+			a.nav_toggle {
+				display: none;
+			}
+			
+			a.social_FB, a.social_Tw, a.social_Pinterest, a.social_Instagram {
+				.ir;
+				
+				width: 32px;
+				height: 32px;
+				display: block;
+				margin: 0;
+				float: left;
+				margin-right: 10px;
+				
+				background: url("../_img/sprite_main_2015_02_13.png") no-repeat;
+				
+				
+			}
+			a.social_FB {
+				background-position: -80px 0px;
+			}
+			a.social_Tw {
+				background-position: -120px 0px;
+			}
+			a.social_Pinterest {
+				background-position: -160px 0px;
+			}
+			a.social_Instagram {
+				background-position: -320px 0px;
+				margin-right: 1px;
+			}
+			
+		}
+		
+	}
+
+
+	.show_mobile {
+		display: none;
+	}
+	.show_desktop {
+		display: inline-block;
+	}
+	
+	.site_header {
+		
+		.topnav {
+			right: 0px;
+		}
+		
+	}
+	
+	.site_body {
+		
+		.site_nav {
+			
+			width: auto;
+			
+			.first li:first-of-type {
+				display: block;
+			}
+			
+
+			
+			
+		}
+	
+		.site_footer {
+			
+			.footer_nav {
+				
+				ul {
+					width: 320px;
+				}
+				
+				
+				.address {
+					
+					div {
+						//padding: 0 30px 0 0;
+						.nowrap;
+						text-align: left;
+						
+
+						&#company {
+							.col-span (8,28);
+						}
+						&#number {
+							.col-span (9,28);
+						}
+						&#city {
+							.col-span (7,28);
+							clear: none;
+							padding: 0;
+						}
+						&#phone {
+							.col-span(4,28);
+							padding: 0;
+						}
+
+						
+					}
+					
+				}
+				
+				
+			}
+			
+		}
+	
+	}
+
+}
+

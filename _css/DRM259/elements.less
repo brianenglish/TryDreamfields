@@ -1,0 +1,83 @@
+
+	* {
+		.box-sizing( border-box );
+		*behavior: url(/_js/boxsizing.htc); // polyfill path relative to html
+	}
+	
+	html, body {
+		//width: 100%;
+		//height: 100%;
+	}
+	
+	img {
+		width: 100%;
+		//max-width: 100%;
+		vertical-align: middle;
+		display: block;
+	}
+	
+	body {
+		color: @textdefault;
+		font-family: @bodyfont;
+		.font-size(15);
+		.line-height(@baseline);
+		text-rendering : optimizelegibility;
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+	
+	a {
+		.hyperlink;
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+		font-family: @headingfont;
+		font-size: inherit;
+		line-height: inherit;
+		margin: 0 0 @baseline;
+	}
+	
+	h1 {
+		color: @orange;
+		.font-size(45);
+		.line-height(44)
+	}
+	h1.white{
+		color: @white;
+	}
+	h2 {
+		font-family: @bodyfont;
+		.font-size(18);
+		.line-height(20);
+		margin: 0;
+	}
+	
+	
+	p, ul, ol, table {
+		margin: 0 0 @baseline;
+	}
+	
+	ul, ol {
+		padding-left: (@spacer*2);
+	}
+	
+	dl { margin: 0; }
+	
+	dt { font-weight: bold; }
+	
+	dd { margin: 0 0 @baseline; }
+	
+	blockquote {
+		font-style: italic;
+	}
+	
+	hr {
+		height: 1px;
+		border: none;
+		background: @orange;
+		margin: (@baseline + 10) -10px;
+	}
+	
+
+	
+	

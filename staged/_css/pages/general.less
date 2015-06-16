@@ -1,0 +1,119 @@
+
+@import "../lesshat";
+@import "../helpers";
+//@import "../elements";
+
+
+
+// MAIN STYLES
+// ============================================================
+	
+
+	body.contact input[type="text"] {
+		.input(default);
+	}
+	
+	.orangeBox {
+		margin: 4px 0 20px 0;
+		padding: 20px;
+		width: 100%;
+		border: 1px solid @orange;
+		font-weight: bold;
+		text-align: left;
+	}
+	
+	.columns {
+		margin: 0 0px;
+		.clearfix;
+	}
+	.ca_1, .ca_2 {
+		.col-span(1,1);
+		.clearfix;
+	}
+	
+	.ca_1 {
+		//padding: 0 0 20px 0;
+		.clearfix;
+		margin: 0 0 30px 0;
+		
+		// coupon-thanks.php Print button
+		#printLink {
+			width: 100%;
+		}
+	}
+	
+
+	/* OL UL */
+	ol.main {
+		  margin: 20px 0 0px 20px;
+		li {
+			margin-bottom: 20px;
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+
+			ul {
+				margin: 20px 0 20px 0;
+				li {
+					margin: 0 0 10px 0;
+				}
+			}
+		}
+	}
+
+
+	
+	
+// RESPONSIVE
+// ============================================================
+
+
+@media only screen and (min-width: 481px) {
+	
+	.ca_1 {
+		// coupon-thanks.php Print button
+		#printLink {
+			width: 240px;
+		}
+	}
+ 
+
+	
+	
+} @media only screen and (min-width: 640px) {
+	
+
+
+	
+
+} @media only screen and (min-width: 768px) {
+	
+
+
+
+} @media only screen and (min-width: 900px) {
+
+	
+
+	
+} @media only screen and (min-width: 1024px) {
+	
+
+}
+	
+	
+// REPEAT RESPONSIVE FOR IE7 AND 8
+// ------------------------------------------------
+	
+.lt-ie9 {
+
+	.ca_1 {
+		// coupon-thanks.php Print button
+		#printLink {
+			width: 240px;
+		}
+	}
+	
+	
+}
+

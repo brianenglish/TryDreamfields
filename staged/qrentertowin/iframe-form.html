@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="viewport" content="width=320, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0;"/>
+<title>QR Enter to Win - Form</title>
+<link href="../css/mobile_drm144healthy.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+html {
+	overflow:visible;
+}
+</style>
+<script language="Javascript" type="text/javascript">
+<!--
+
+function clearText(thefield){
+if (thefield.value=="Enter Your Email Address.")
+thefield.value = ""
+}
+
+function redoText(thefield){
+if ((thefield.value=="Enter Your Email Address.") || (thefield.value == ""))
+thefield.value = "Enter Your Email Address."
+}
+
+function clearFullName(thefield){
+if (thefield.value=="Enter Your Name.")
+thefield.value = ""
+}
+
+function redoFullName(thefield){
+if ((thefield.value=="Enter Your Name.") || (thefield.value == ""))
+thefield.value = "Enter Your Name."
+} 
+
+// non-empty Full Name
+function isEmptyFullName(strng) {
+var error = "";
+  if ((strng.length == 0) || (strng == "Enter Your Name.")) {
+     error = "Please fill in your Name.\n"
+  }
+return error;
+}
+
+// Zip Code
+function checkZip (strng) {
+var error="";
+  if (strng == "" || strng == "Enter Your Zip Code.") {
+     error = "You didn't enter a Zip Code.\n";
+  } 
+return error;
+}
+
+// email
+function checkEmail (strng) {
+var error="";
+  if (strng == "") {
+     error = "You didn't enter an Email Address.\n";
+  } else {
+    var emailFilter=/^.+@.+\..{2,3}$/;
+    if (!(emailFilter.test(strng))) {
+       error = "Please enter a valid Email Address.\n";
+    } else {
+      //test email for illegal characters
+      var illegalChars= /[\(\)\<\>\,\;\:\\\"\[\]]/
+      if (strng.match(illegalChars)) {
+         error = "The Email Address contains illegal characters.\n";
+      }
+    }
+  }
+return error;
+}
+
+function checkWholeForm() {
+    var why = "";
+	why += checkEmail(document.subscribeForm.elements['email'].value);
+	why += isEmptyFullName(document.subscribeForm.elements['fullname'].value);
+	
+	if (why != "") {
+       alert(why);
+       return false;
+    } else {
+		document.getElementById("optin").value = String(document.getElementById("unsubChk").checked);
+		return true;
+	}
+	return false;
+}
+				
+//-->
+</script>
+</head>
+<body>
+
+
+<div id="form" style="width:318px; height:322px; background:url(../images/mobi-con/formBG.jpg);">
+    <img src="../images/mobi-con/hd_Enter.gif" alt="Enter to Win!" width="202" height="44" border="0">
+    
+    
+    
+      <div>
+        <form action="http://dreamfields.hyperdrivei.biz/drm-forms/trydrm/qrentertowin/lander_proxy_qrentertowin222.php" enctype="application/x-www-form-urlencoded" name="subscribeForm" id="subscribeForm" method="POST" onSubmit="return checkWholeForm(); return false;" style="margin:0; padding:0;">
+        <!--<form action="http://cl.exct.net/subscribe.aspx" name="subscribeForm" id="subscribeForm" method="POST" onsubmit="return checkWholeForm(); return false;" style="margin:0; padding:0;">-->
+        
+        <!-- (2013/03/11 ... my lists > 2010_Landing_Pages > TryDrm_Landing_Pages > QR_EnterToWin -->
+        <input type="hidden" name="MID" value="13846" />
+        <input type="hidden" name="lid" value="17916804" />
+        <!-- Use the correct Thanks and Error pages below (use absolute URLs, with the domain name) -->
+        <input type="hidden" name="thx" value="http://www.trydreamfields.com/qrentertowin/iframe-thanks.php" />
+        <input type="hidden" name="err" value="http://www.trydreamfields.com/qrentertowin/iframe-error.php" />
+        <!-- Source / Group-->
+        <input type="hidden" name="source" value="QR_EnterToWin">
+        <input type="hidden" name="group" value="Eat Healthier">
+        <!-- do not send triggered email -->
+        <input type="hidden" name="trigger" value="yes">
+        <input type="hidden" name="optin" id="optin" value="false">
+        
+        <div style="padding:9px 0 10px 20px;">
+          <div><input name="fullname" type="text" autocorrect="off" autocapitalize="off" id="fullname" size="30" class="txtBoxStyle1" value="Enter Your Name." style="width:271px; margin:0px 0 0 0;" onFocus="clearFullName(this)" onBlur="redoFullName(this)"></div>
+          <div><input name="email" type="email" autocorrect="off" autocapitalize="off" id="email" size="30" class="txtBoxStyle1" value="Enter Your Email Address." style="width:271px; margin:15px 0 0 0;" onFocus="clearText(this)" onBlur="redoText(this)"></div>
+          
+          
+          <div style="padding:15px 0 15px 0; margin-left:-3px;">
+            <div style="width:20px; float:left;"><input type="checkbox" name="unsubChk" id="unsubChk" value="true"></div>
+            <div style="width:210px; float:left; padding:0 10px 0 0; line-height:15px;"><label for="unsubChk">Yes, send me a monthly email with delicious recipes &amp; coupon savings. 
+            (<a href="privacy-policy.html" target="_parent">Your email is safe with us</a>)</label></div>
+            <div id="privacyPolicy" align="center" style="width:50px; float:left;"><a href="privacy-policy.html" target="_parent">Privacy Policy</a></div>
+            <div class="clear"><!-- clear --></div>
+          </div>
+          
+          <div><input name="submit" type="image" style="margin:0 0 0 0; outline:none;" value="SUBMIT" src="../images/mobi-con/btn_Submit.gif" alt="Submit"></div>
+          
+        </div>
+        
+        </form>
+      </div>
+      
+      <div style="padding:5px 20px; font-size:10px; line-height:14px;">
+      By entering your email address and checking the box above, you are agreeing to receive a monthly email from Dreamfields containing delicious recipes and coupon savings. You can unsubscribe at any time.
+      </div>
+    
+    </div>
+
+<!--#include virtual="../inc_GoogAna_v01.shtml" -->
+<!--#include virtual="../inc_GoogRetargetLanders_v01.shtml" -->
+</body>
+</html>
