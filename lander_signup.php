@@ -7,7 +7,7 @@ session_start();
 <title>Dreamfields Pasta, Sign up for offers and recipes by email</title>
 <link href="css/main.css" rel="stylesheet" type="text/css">
 <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
-<meta http-equiv="title" content="Dreamfields Paasta, Sign up for offers and recipes by email ">
+<meta http-equiv="title" content="Dreamfields Pasta, Sign up for offers and recipes by email ">
 <meta name="description" content="Get coupons, recipes, and more via email from Dreamfields Pasta">
 <meta name="keywords" content="dreamfields, pasta, low carb, carbs, healthy, recipes, diet, diabetes, glycemic, high fiber, receipe, dreamfeild, coupon, offers, barilla">
 <meta name="keyphrases" content="dreamfields low carb pasta, free pasta recipes, healthy living, diabetic info, buy dreamfields pasta online, dreamfields pasta coupon, free dreamfields pasta email, free recipes, free grocery coupons, dreamfields offers, dreamfields privacy policy, family nutrition, healthier cooking, healthy living info, dieting, low carb dieting, low carb diet, brad Schoenfeld, minneapolis diabetes expo">
@@ -17,6 +17,7 @@ float:right;
 width:250px;
 }
 </style>
+<!-- psata -->
 <script language="JavaScript" type="text/JavaScript" src="jscripts/checkform.js"></script>
 <script language="javascript" type="text/javascript">
 <!--
