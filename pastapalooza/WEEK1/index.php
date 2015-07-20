@@ -81,26 +81,23 @@ $bodyClass = "home"
             <hr>
 			<div class="ca_1">
 				
-				<h1 class="larger">The Gourmet Market Basket Challenge</h1>
-                
-                <p>Thank you for voting in the Gourmet Market Basket Challenge. Featured ingredients included: flavored or wine vinegar, almonds, root vegetable (e.g., fresh fennel, radishes, beets, turnips, leeks/onions, carrots, kohlrabi, parsnips, or celeriac/Celery root), protein (fish, beef, poultry, beans, tofu, etc.), and dried fruit. The bloggers may also add up to two ingredients of their choice to round out their dish. Dreamfields pasta, salt, pepper, oil and water are &ldquo;free ingredients.&rdquo;</p>
+				<h1 class="larger">The Guys&rsquo; Challenge Basket</h1>
                 
                 <p>
-                <strong><em>Coming up next...</em></strong> 
-								</p>
-                
-                <p>
-                The Middle Eastern Basket Challenge will take our taste buds on a trip to the Middle East.Ingredients in the market basket include: cumin/Za’atar/Harissa, legumes, garlic, chutney and citrus. Participating bloggers may also add up to two ingredients of their choice to round out their dish. Dreamfields pasta, salt, pepper, oil and water are &ldquo;free ingredients.&rdquo;
-                </p> 
-                
-                <p>
-               <!--  <strong>Vote now for your favorite recipe!</strong><br>
-                <br> -->
-                <strong><em>
-                Voting opens on for the Middle Eastern Basket Challenge July 23.</em></strong> 
+                This week&rsquo;s challenge features an all-guy cast of bloggers whipping up their &ldquo;manly&rdquo; recipes for us to enjoy. Ingredients in their baskets include: beer, smoked or grilled meats, hot peppers, lemon and a vegetable. They may also add up to two ingredients of their choice to round out their dish. Dreamfields pasta, salt, pepper, oil and water are &ldquo;free ingredients.&rdquo;
                 </p>
                 
-                <div class="wishpond-campaign" data-wishpond-id="837653" data-wishpond-href="https://www.wishpond.com/lp/837653/"></div>
+                <p>
+                <strong><em>Why do we require your email address?</em></strong> One voter from each Market Basket Challenge will be chosen at random to win a family pack of Dreamfields pasta and a $1,000 donation to the food bank of their choice. So the more you vote, the more chances you have to win. All winners will be contacted via email. 
+                </p> 
+                
+                <p style="text-align: center;">
+                <strong>Vote now for your favorite recipe!</strong><br>
+                <br>
+                Voting ends for The Guys&rsquo; Challenge Basket at midnight EDT, June 17, 2015. 
+                </p>
+                
+                <div class="wishpond-campaign" data-wishpond-id="798215" data-wishpond-href="https://www.wishpond.com/lp/798215/"></div>
                 
 			</div><!-- ca_1b -->
 			
@@ -138,34 +135,12 @@ $bodyClass = "home"
 				<h1 class="larger">Coming Up Next&hellip;</h1>
                 
                 <p style="text-align: center;">
-                The Middle Eastern Basket Challenge voting starts July 23, 2015.
-                </p>
-
-			</div><!-- ca_1d -->
-
-			<hr>
-			<div class="ca_1" id="MarketBasketSchedule">
-				
-				<h1 class="larger">Challenge Winners</h1>
-                
-                <p>
-                <strong>Garden Fresh Basket Challenge</strong><br />
-                <em>Voted #1: </em> <a href="http://www.lizventures.com/2015/05/garden-fresh-pasta-salad-with-cilantro-lime-drizzle/" target="_blank">Garden Fresh Pasta Salad with Cilantro Lime Drizzle by LizVentures</a><br /><br />
-                <a href="http://dreamfieldsfoods.com/blog/admin/the-garden-fresh-market-basket-challenge" target="_blank">View all recipes from the Garden Fresh Basket Challenge</a>
-                </p>
-
-                <p>
-                <strong>The Guys' Market Basket Challenge</strong><br />
-                <em>Voted #1: </em> <a href="http://thiscookindad.com/2015/06/lemon-poblano-mac-and-cheese/" target="_blank">Lemon Poblano Mac and Cheese By This Cookin Dad</a><br /><br />
-                <a href="http://dreamfieldsfoods.com/blog/dreamfields-pasta-recipes-and-cooking-tips/the-guys-market-basket-challenge" target="_blank">View all recipes from the Guys' Market Basket Challenge</a>
+                The Gourmet Basket Challenge. Voting starts on July 2, 2015.
                 </p>
                 
                 <p>&nbsp;</p>
 
 			</div><!-- ca_1d -->
-
-
-
 			
             
 			<div class="ca_2 ca_special">
