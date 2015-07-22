@@ -81,26 +81,22 @@ $bodyClass = "home"
             <hr>
 			<div class="ca_1">
 				
-				<h1 class="larger">The Gourmet Market Basket Challenge</h1>
+				<h1 class="larger">The Middle Eastern Basket Challange</h1>
                 
-                <p>Thank you for voting in the Gourmet Market Basket Challenge. Featured ingredients included: flavored or wine vinegar, almonds, root vegetable (e.g., fresh fennel, radishes, beets, turnips, leeks/onions, carrots, kohlrabi, parsnips, or celeriac/Celery root), protein (fish, beef, poultry, beans, tofu, etc.), and dried fruit. The bloggers may also add up to two ingredients of their choice to round out their dish. Dreamfields pasta, salt, pepper, oil and water are &ldquo;free ingredients.&rdquo;</p>
-                
-                <p>
-                <strong><em>Coming up next...</em></strong> 
-								</p>
+                <p>This challenge takes our taste buds on a trip to the Middle East. Ingredients in the market basket include: cumin/Za’atar/Harissa, legumes, garlic, chutney and citrus. Participating bloggers may also add up to two ingredients of their choice to round out their dish. Dreamfields pasta, salt, pepper, oil and water are &ldquo;free ingredients.&rdquo;</p>
                 
                 <p>
-                The Middle Eastern Basket Challenge will take our taste buds on a trip to the Middle East.Ingredients in the market basket include: cumin/Za’atar/Harissa, legumes, garlic, chutney and citrus. Participating bloggers may also add up to two ingredients of their choice to round out their dish. Dreamfields pasta, salt, pepper, oil and water are &ldquo;free ingredients.&rdquo;
-                </p> 
-                
-                <p>
-               <!--  <strong>Vote now for your favorite recipe!</strong><br>
-                <br> -->
-                <strong><em>
-                Voting opens on for the Middle Eastern Basket Challenge July 23.</em></strong> 
+                <strong><em>Why do we require your email address?</em></strong> One voter from each Market Basket Challenge will be chosen at random to win a family pack of Dreamfields pasta and a $1,000 donation to the food bank of their choice. So the more you vote, the more chances you have to win. All winners will be contacted via email. 
                 </p>
                 
-                <div class="wishpond-campaign" data-wishpond-id="837653" data-wishpond-href="https://www.wishpond.com/lp/837653/"></div>
+                <p style="text-align: center;">
+                <strong>Vote now for your favorite recipe!</strong><br>
+                <br>
+                Voting ends for The Middle Eastern Basket Challenge ends at 11:59PM EDT, July 29, 2015.
+                </p>
+                
+                
+                <div class="wishpond-campaign" data-wishpond-id="890369" data-wishpond-href="https://www.wishpond.com/lp/890369/"></div>
                 
 			</div><!-- ca_1b -->
 			
@@ -138,7 +134,7 @@ $bodyClass = "home"
 				<h1 class="larger">Coming Up Next&hellip;</h1>
                 
                 <p style="text-align: center;">
-                The Middle Eastern Basket Challenge voting starts July 23, 2015.
+                The Pesto-Presto Basket Challenge voting starts August 13, 2015.
                 </p>
 
 			</div><!-- ca_1d -->
