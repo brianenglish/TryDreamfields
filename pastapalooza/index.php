@@ -83,18 +83,22 @@ $bodyClass = "home"
 				
 				<h1 class="larger">The Middle Eastern Basket Challange</h1>
                 
-                <p>This challenge takes our taste buds on a trip to the Middle East. Ingredients in the market basket include: cumin/Za’atar/Harissa, legumes, garlic, chutney and citrus. Participating bloggers may also add up to two ingredients of their choice to round out their dish. Dreamfields pasta, salt, pepper, oil and water are &ldquo;free ingredients.&rdquo;</p>
+                <p>Thank you for voting in the Middle Eastern Basket Challenge. Ingredients in the market basket include: cumin/Za’atar/Harissa, legumes, garlic, chutney and citrus. Participating bloggers may also add up to two ingredients of their choice to round out their dish. Dreamfields pasta, salt, pepper, oil and water are &ldquo;free ingredients.&rdquo;</p>
                 
                 <p>
-                <strong><em>Why do we require your email address?</em></strong> One voter from each Market Basket Challenge will be chosen at random to win a family pack of Dreamfields pasta and a $1,000 donation to the food bank of their choice. So the more you vote, the more chances you have to win. All winners will be contacted via email. 
-                </p>
+                <strong><em>Coming up next...</em></strong> 
+								</p>
                 
-                <p style="text-align: center;">
-                <strong>Vote now for your favorite recipe!</strong><br>
-                <br>
-                Voting ends for The Middle Eastern Basket Challenge ends at 11:59PM EDT, July 29, 2015.
-                </p>
+                <p>
+                The Pesto-Presto Challenge Basket which features classic, ingredients typically stocked in our pantries and grown in our gardens.Basket ingredients include: pesto, fresh veggies, cheese, poultry (fresh, pre-cooked, sausage, etc.) and broth.Bloggers may also add up to two ingredients of their choice to round out the dish.Dreamfields pasta, salt, pepper, oil and water are “free ingredients.”
+                </p> 
                 
+                <p>
+               <!--  <strong>Vote now for your favorite recipe!</strong><br>
+                <br> -->
+                <strong><em>
+                Voting opens on August 13.</em></strong> 
+                </p>
                 
                 <div class="wishpond-campaign" data-wishpond-id="890369" data-wishpond-href="https://www.wishpond.com/lp/890369/"></div>
                 
@@ -134,7 +138,7 @@ $bodyClass = "home"
 				<h1 class="larger">Coming Up Next&hellip;</h1>
                 
                 <p style="text-align: center;">
-                The Pesto-Presto Basket Challenge voting starts August 13, 2015.
+                The Pesto-Presto Challenge Basket voting starts August 13, 2015.
                 </p>
 
 			</div><!-- ca_1d -->
