@@ -81,26 +81,23 @@ $bodyClass = "home"
             <hr>
 			<div class="ca_1">
 				
-				<h1 class="larger">The Middle Eastern Basket Challange</h1>
+				<h1 class="larger">The Pesto-Presto Basket Challenge</h1>
                 
-                <p>Thank you for voting in the Middle Eastern Basket Challenge. Ingredients in the market basket include: cumin/Za’atar/Harissa, legumes, garlic, chutney and citrus. Participating bloggers may also add up to two ingredients of their choice to round out their dish. Dreamfields pasta, salt, pepper, oil and water are &ldquo;free ingredients.&rdquo;</p>
-                
-                <p>
-                <strong><em>Coming up next...</em></strong> 
-								</p>
+                <p>Our final Market Basket challenge of the summer features classic, ingredients typically stocked in our pantries and grown in our gardens. Basket ingredients include: pesto, fresh veggies, cheese, poultry (fresh, pre-cooked, sausage, etc.) and broth. Bloggers may also add up to two ingredients of their choice to round out the dish. Dreamfields pasta, salt, pepper, oil and water are &ldquo;free ingredients.&rdquo;</p>
                 
                 <p>
-                The Pesto-Presto Challenge Basket which features classic, ingredients typically stocked in our pantries and grown in our gardens.Basket ingredients include: pesto, fresh veggies, cheese, poultry (fresh, pre-cooked, sausage, etc.) and broth.Bloggers may also add up to two ingredients of their choice to round out the dish.Dreamfields pasta, salt, pepper, oil and water are “free ingredients.”
+                <strong><em>Why do we require your email address?</em></strong> One voter from each Market Basket Challenge will be chosen at random to win a family pack of Dreamfields pasta and a $1,000 donation to the food bank of their choice. So the more you vote, the more chances you have to win. All winners will be contacted via email. 
                 </p> 
                 
-                <p>
-               <!--  <strong>Vote now for your favorite recipe!</strong><br>
-                <br> -->
-                <strong><em>
-                Voting opens on August 13.</em></strong> 
+              
+                
+                <p style="text-align: center;">
+                <strong>Vote now for your favorite recipe!</strong><br>
+                <br>
+                Voting for The Pesto-Presto Challenge ends at 11:59PM EDT, August 19, 2015.
                 </p>
                 
-                <div class="wishpond-campaign" data-wishpond-id="890369" data-wishpond-href="https://www.wishpond.com/lp/890369/"></div>
+                <div class="wishpond-campaign" data-wishpond-id="941883" data-wishpond-href="https://www.wishpond.com/lp/941883/"></div>
                 
 			</div><!-- ca_1b -->
 			
@@ -158,6 +155,18 @@ $bodyClass = "home"
                 <strong>The Guys' Market Basket Challenge</strong><br />
                 <em>Voted #1: </em> <a href="http://thiscookindad.com/2015/06/lemon-poblano-mac-and-cheese/" target="_blank">Lemon Poblano Mac and Cheese By This Cookin Dad</a><br /><br />
                 <a href="http://dreamfieldsfoods.com/blog/dreamfields-pasta-recipes-and-cooking-tips/the-guys-market-basket-challenge" target="_blank">View all recipes from the Guys' Market Basket Challenge</a>
+                </p>
+
+                <p>
+                <strong>The Gourmet Basket Challenge</strong><br />
+                <em>Voted #1: </em> <a href="http://www.thearmymom.com/2015/07/dreamfields-pastapalooza-gourmet-market.html" target="_blank">Fennel Pesto Pasta With Fennel, Roasted Tomato And Cannellini Salad by The Army Mom</a><br /><br />
+                
+                </p>
+
+                <p>
+                <strong>The Middle Eastern Basket Challenge</strong><br />
+                <em>Voted #1: </em> <a href="http://www.chefnextdoorblog.com/2015/07/chickpea-pasta-salad.html" target="_blank">Chickpea Pasta Salad with Lemon-Chutney Dressing by The Chef Next Door</a><br /><br />
+                
                 </p>
                 
                 <p>&nbsp;</p>
