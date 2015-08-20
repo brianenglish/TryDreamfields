@@ -91,11 +91,11 @@ $bodyClass = "home"
                 
               
                 
-                <p style="text-align: center;">
+              <!--   <p style="text-align: center;">
                 <strong>Vote now for your favorite recipe!</strong><br>
                 <br>
                 Voting for The Pesto-Presto Challenge ends at 11:59PM EDT, August 19, 2015.
-                </p>
+                </p> -->
                 
                 <div class="wishpond-campaign" data-wishpond-id="941883" data-wishpond-href="https://www.wishpond.com/lp/941883/"></div>
                 
@@ -132,11 +132,11 @@ $bodyClass = "home"
             <hr>
 			<div class="ca_1" id="MarketBasketSchedule">
 				
-				<h1 class="larger">Coming Up Next&hellip;</h1>
+				<!-- <h1 class="larger">Coming Up Next&hellip;</h1>
                 
                 <p style="text-align: center;">
                 The Pesto-Presto Challenge Basket voting starts August 13, 2015.
-                </p>
+                </p> -->
 
 			</div><!-- ca_1d -->
 
@@ -159,13 +159,19 @@ $bodyClass = "home"
 
                 <p>
                 <strong>The Gourmet Basket Challenge</strong><br />
-                <em>Voted #1: </em> <a href="http://www.thearmymom.com/2015/07/dreamfields-pastapalooza-gourmet-market.html" target="_blank">Fennel Pesto Pasta With Fennel, Roasted Tomato And Cannellini Salad by The Army Mom</a><br /><br />
+                <em>Voted #1: </em> <a href="http://www.thearmymom.com/2015/07/dreamfields-pastapalooza-gourmet-market.html" target="_blank">Fennel Pesto Pasta With Fennel, Roasted Tomato And Cannellini Salad by The Army Mom</a><br />
                 
                 </p>
 
                 <p>
                 <strong>The Middle Eastern Basket Challenge</strong><br />
-                <em>Voted #1: </em> <a href="http://www.chefnextdoorblog.com/2015/07/chickpea-pasta-salad.html" target="_blank">Chickpea Pasta Salad with Lemon-Chutney Dressing by The Chef Next Door</a><br /><br />
+                <em>Voted #1: </em> <a href="http://www.chefnextdoorblog.com/2015/07/chickpea-pasta-salad.html" target="_blank">Chickpea Pasta Salad with Lemon-Chutney Dressing by The Chef Next Door</a><br />
+                
+                </p>
+
+                <p>
+                <strong>The Pesto-Presto Basket Challenge</strong><br />
+                <em>Voted #1: </em> <a href="http://todayscreativelife.com/penne-primavera-pasta-recipe/" target="_blank">Penne Primavera</a><br />
                 
                 </p>
                 
