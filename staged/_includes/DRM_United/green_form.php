@@ -6,7 +6,7 @@
 		<h1>Sign Up for Recipes &amp; Money-Saving Offers</h1>
 		
 		<div id="form">
-			<form action="_process/lander_proxy_withZip_optin.php" name="subscribeForm" id="subscribeForm" method="post" onSubmit="return checkEmailForm();" >
+			<form action="/_process/lander_proxy_withZip_optin.php" name="subscribeForm" id="subscribeForm" method="post" onSubmit="return checkEmailForm();" >
 				<input type="hidden" name="thx" value="<?php echo ($thx != "") ? $thx : "http://www.trydreamfields.com/coupon-thanks.php" ?>">
 				<input type="hidden" name="err" value="http://www.trydreamfields.com/error.php">
 

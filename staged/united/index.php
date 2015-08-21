@@ -3,8 +3,8 @@
 /**- - - - - - - - - - - - - - - - - - - - *
  * These vars affect the green signup form
  * - - - - - - - - - - - - - - - - - - - - */
-$thx = "http://www.trydreamfields.com/coupon-thanks.php";
-$lid = "17059589";
+$thx = "http://www.dreamfieldfoods.com";
+$lid = "18799435";
 $lid_comment = "(2010/11/09 ... My Lists > 2010_Landing_Pages > TryDrm_Landing_Pages > TryDrm_00_Root";
 $group = ""; // default is Eat Healthier (other options: Managing Diabetes, Low Carb Diet)
 $source = "TryDreamfields.com";
