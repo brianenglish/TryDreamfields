@@ -178,6 +178,26 @@ body.home .greenbox input[type="text"] {
 .greenbox #form .unsub_txt a {
   color: #000000;
 }
+.greenbox #form .unsub_txt_white {
+  width: 85%;
+  float: left;
+  padding: 0px 0 10px 0px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 18px;
+  line-height: 1.125rem;
+}
+.greenbox #form .unsub_txt_white a {
+  color: #ffffff;
+  font-style: italic;
+  font-weight: normal;
+
+}
+.greenbox #form .unsub_txt a {
+  color: #000000;
+}
 .greenbox #form p {
   color: #000000;
   font-weight: bold;
@@ -343,6 +363,18 @@ body.home .greenbox input[type="text"] {
   color: #302014;
   font-weight: bold;
 }
+
+.ca_1 .btn_GetMoreRecipes {
+    padding-bottom: 15px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .ca_1 .btn_FindAStore {
+    padding-bottom: 15px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 @media only screen and (min-width: 481px) {
   .greenbox {
     width: 100%;
@@ -362,6 +394,9 @@ body.home .greenbox input[type="text"] {
     line-height: 36px;
     line-height: 2.25rem;
     text-align: center;
+  }
+  .ca_1 .btn_GetMoreRecipes {
+    padding-bottom: 15px;
   }
   .greenbox h1:before,
   .greenbox h1:after {
@@ -459,8 +494,15 @@ body.home .greenbox input[type="text"] {
     float: left;
   }
   .ca_1 .btn_GetMoreRecipes {
-    max-width: 262px;
+    width: 250px;
+    margin-left: 175px;
+    display: inline-block;
+  }
+  .ca_1 .btn_FindAStore {
+    width: 250px;
     margin: 0 auto;
+    margin-left: 20px;
+    display: inline-block;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -647,6 +689,11 @@ body.home .greenbox input[type="text"] {
   float: left;
 }
 .lt-ie9 .ca_1 .btn_GetMoreRecipes {
+  max-width: 262px;
+  margin: 0 auto;
+}
+
+.lt-ie9 .ca_1 .btn_FindAStore {
   max-width: 262px;
   margin: 0 auto;
 }
