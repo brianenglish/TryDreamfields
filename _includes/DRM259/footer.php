@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_URI'] == '../../coupon-thanks.php') {
 })();
 </script>
 <noscript>
-  <iframe src='//20723946p.rfihub.com/ca.html?rb=24704&ca=20723946&_o=24704&_t=20723946&ra=REPLACE_ME_WITH_YOUR_CACHE_BUSTING' style='display:none;padding:0;margin:0' width='0' height='0'>
+  <iframe src='http://20723946p.rfihub.com/ca.gif?rb=24704&ca=20723946&_o=24704&_t=20723946&rd=INSERT_FINAL_DESTINATION_URL_HEREREPLACE_ME_WITH_YOUR_CACHE_BUSTING' style='display:none;padding:0;margin:0' width='0' height='0'>
 </iframe>
 </noscript>
 <!-- End Rocket Fuel Conversion Action Tracking Code Version 9 -->";
