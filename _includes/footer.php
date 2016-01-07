@@ -41,6 +41,9 @@ if ($_SERVER['REQUEST_URI'] == '/coupon-thanks.php') {
 <div class="copyright">Copyright &copy; <?php echo date("Y"); ?> Dreamfields</div>
 </div><!-- #container -->
 
+<div class="copyrightPost"><a href="http://www.postholdings.com" target="_blank">Post Holdings</a></div>
+</div>
+
 <!-- SCRIPTS -->
 <?php
 // If we aren't using PrettyPhoto, then we can load jQuery in the footer instead.
