@@ -123,5 +123,6 @@ $bodyClass = "home";
 	</div><!-- #site_body -->
 
 <?php include('_includes/DRM259/footer.php'); ?>	
+</div>
 </body>
 </html>
