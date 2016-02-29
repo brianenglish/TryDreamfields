@@ -17,6 +17,7 @@
                 <input type="hidden" name="revtrax_source" value="<?php echo ($revtrax_source != "") ? $revtrax_source : "" ?>" />
                 <input type="hidden" name="group" value="<?php echo ($group != "") ? $group : "Eat Healthier" ?>" />
                 <input type="hidden" name="campaign" value="<?php echo ($campaign != "") ? $campaign : "" ?>" />
+                <input type="hidden" name="uid" id="uid" value="" />
 
                 <?php
                 if(isset($adgroup)) {
@@ -73,7 +74,7 @@
                 <input type="hidden" name="rec" id="rec" value="" />
 
                 <div class="div-email">
-                    <input placeholder="Enter E-mail Address" type="text" name="email" id="email" size="30" value="" />
+                    <input placeholder="Enter E-mail Address" type="text" name="email" id="email" size="30" value="" onchange="updateEmail()"/>
                 </div>
 
                 <div class="clearMe">
@@ -105,6 +106,11 @@
         </div>
 
     </div>
-
+  <script>
+    function updateEmail() {
+      var email = document.getElementById('email').value;
+      document.getElementById('uid').value = email;
+    }
+  </script>
 </div>
 <!-- end .outer_greenbox -->
