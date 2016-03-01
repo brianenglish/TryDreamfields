@@ -6,7 +6,7 @@
         <h1>Get $1.00 Off Any Box of Dreamfields Pasta</h1>
 
         <div id="form">
-            <form action="http://20723946p.rfihub.com/ca.gif?rb=24704&ca=20723946&_o=24704&_t=20723946&rd=http://www.trydreamfields.com/coupon-thanks.php" name="subscribeForm" id="subscribeForm" method="post" onsubmit="return checkEmailForm();">
+            <form action="http://20723946p.rfihub.com/ca.gif?rb=24704&ca=20723946&_o=24704&_t=20723946&uid=**UID**&rd=http://www.trydreamfields.com/coupon-thanks.php" name="subscribeForm" id="subscribeForm" method="post" onsubmit="return checkEmailForm();">
                 <input type="hidden" name="thx" value="<?php echo ($thx != "") ? $thx : "http://www.trydreamfields.com/coupon-thanks.php" ?>" />
                 <input type="hidden" name="err" value="http://www.trydreamfields.com/error.php" />
 
@@ -17,7 +17,6 @@
                 <input type="hidden" name="revtrax_source" value="<?php echo ($revtrax_source != "") ? $revtrax_source : "" ?>" />
                 <input type="hidden" name="group" value="<?php echo ($group != "") ? $group : "Eat Healthier" ?>" />
                 <input type="hidden" name="campaign" value="<?php echo ($campaign != "") ? $campaign : "" ?>" />
-                <input type="hidden" name="uid" id="uid" value="" />
 
                 <?php
                 if(isset($adgroup)) {
@@ -109,7 +108,12 @@
   <script>
     function updateEmail() {
       var email = document.getElementById('email').value;
-      document.getElementById('uid').value = email;
+      var formAction = document.getElementById('subscribeForm').action;
+
+      formAction = formAction.replace("**UID**", email);
+
+      document.getElementById('subscribeForm').action = formAction;
+
     }
   </script>
 </div>
