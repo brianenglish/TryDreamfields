@@ -55,7 +55,7 @@ input {
 input[type="checkbox"] {
   width: auto;
   height: auto;
-  margin-top: 10px;
+  margin-top: 0;
 }
 input[type="radio"] {
   width: auto;
@@ -167,16 +167,24 @@ body.home .greenbox input[type="text"] {
 .greenbox #form .unsub_txt {
   width: 85%;
   float: left;
-  padding: 10px 0 0 0px;
-  color: #000000;
-  font-weight: bold;
+  padding: 0 0 0 0;
+  color: #ffffff;
   font-size: 15px;
   font-size: 0.9375rem;
   line-height: 18px;
   line-height: 1.125rem;
+  margin-bottom: 10px;
+  margin-top: 3px;
+  margin-left: 10px;
 }
 .greenbox #form .unsub_txt a {
-  color: #000000;
+  color: #ffffff;
+  font-size: 13px;
+}
+.unsubYes {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
 }
 .greenbox #form p {
   color: #000000;
@@ -343,13 +351,67 @@ body.home .greenbox input[type="text"] {
   color: #302014;
   font-weight: bold;
 }
+
+#unsubChk {
+  transform:scale(2, 2);
+  margin: 10px 0 0 5px;
+}
+
+.div-email {
+  position: relative;
+  overflow: auto;
+  zoom: 1;
+}
+
+.emailWrapper {
+  padding-bottom: 10px;
+}
+
+.div-zip {
+  position: relative;
+}
+
+input.error {
+    border-left: red 10px solid !important;
+}
+
+/*.customValidationZip {
+  position: absolute;
+  top: 0;
+  width: 6px;
+  height: 40px;
+  background: red;
+  z-index: 100;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}*/
+
+@media only screen and (min-width: 325px) {
+    .error {
+        top: 87px;
+    }
+}
+
+@media only screen and (min-width: 450px) {
+    .error {
+        top: 69px;
+    }
+}
+
 @media only screen and (min-width: 481px) {
+
+  .emailWrapper {
+    padding-bottom: 10px;
+    margin: 0 10px 0 10px;
+  }
+
   .greenbox {
     width: 100%;
     height: auto;
     float: none;
     margin: 0 0 0px 0;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
   }
   .greenbox h1 {
     *zoom: 1;
@@ -464,6 +526,17 @@ body.home .greenbox input[type="text"] {
   }
 }
 @media only screen and (min-width: 768px) {
+
+  #unsubChk {
+  
+  margin:7px 0 0 0;
+}
+
+.greenbox #form .unsub_txt {
+  
+  margin-left: 5px;
+}
+
   .outer_greenbox {
     position: absolute;
     top: 22px;
@@ -489,6 +562,11 @@ body.home .greenbox input[type="text"] {
   }
   .greenbox .div-coupon_submit {
     width: 55%;
+  }
+
+  .greenbox {
+    padding-bottom: 10px;
+    margin-top: -5px;
   }
   #hero {
     height: 476px;

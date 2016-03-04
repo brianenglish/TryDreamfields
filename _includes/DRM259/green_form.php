@@ -3,7 +3,7 @@
 
         <img src="_img/home/home_groupshot.png" width="442" height="180" />
 
-        <h1>Get $1.00 Off Any Box of Dreamfields Pasta</h1>
+        <h1>Get $1.00 Off Any Box<br />of Dreamfields Pasta</h1>
 
         <div id="form">
             <form action="_process/lander_proxy_withZip_optin.php" name="subscribeForm" id="subscribeForm" method="post" onsubmit="return checkEmailForm();">
@@ -72,12 +72,29 @@
                 <input type="hidden" name="trigger" value="yes" />
                 <input type="hidden" name="rec" id="rec" value="" />
 
-                <div class="div-email">
-                    <input placeholder="Enter E-mail Address" type="text" name="email" id="email" size="30" value="" onchange="updateEmail()"/>
+                <div class="unsubChk">
+                    <input type="checkbox" name="unsubChk" id="unsubChk" value="Yes" />
                 </div>
+                <div class="unsub_txt">
+                    <span class="unsubYes">Yes</span>, send me monthly emails with delicious recipes, coupon savings and exclusive contests.<br />
+                    <a href="http://www.dreamfieldsfoods.com/privacy-policy.php" target="_blank">(Your email is safe with us)</a>
+
+                </div>
+                
+                
+
+                <div class="div-email">
+                   
+                </div>
+                 <div class="emailWrapper">
+                        <input placeholder="Enter E-mail Address" type="text" name="email" id="email" size="30" value="" onchange="updateEmail()"/>
+                    </div>
+
+
 
                 <div class="clearMe">
                     <div class="div-zip">
+                       
                         <input placeholder="Zip Code" type="text" name="zip" id="zip" size="30" value="" />
                     </div>
                     <div class="div-coupon_submit">
@@ -88,14 +105,7 @@
                     </div>
                 </div>
 
-                <div class="unsubChk">
-                    <input type="checkbox" name="unsubChk" id="unsubChk" value="Yes" />
-                </div>
-                <div class="unsub_txt">
-                    Yes, send me monthly emails with delicious recipes, coupon savings and exclusive contests. (
-                    <a href="http://www.dreamfieldsfoods.com/privacy-policy.php" target="_blank">Your email is safe with us</a>
-                    )
-                </div>
+                
 
             </form>
         </div>
@@ -116,5 +126,6 @@
 
     }
   </script>
+
 </div>
 <!-- end .outer_greenbox -->
