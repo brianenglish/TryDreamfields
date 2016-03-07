@@ -78,21 +78,13 @@
                 <div class="unsub_txt">
                     <span class="unsubYes">Yes</span>, send me monthly emails with delicious recipes, coupon savings and exclusive contests.<br />
                     <a href="http://www.dreamfieldsfoods.com/privacy-policy.php" target="_blank">(Your email is safe with us)</a>
-
                 </div>
-                
-                
-
-               
-                 <div class="emailWrapper">
-                        <input placeholder="Enter E-mail Address" type="text" name="email" id="email" size="30" value="" onchange="updateEmail()"/>
-                    </div>
-
-
+                <div class="emailWrapper">
+                    <input placeholder="Enter E-mail Address" type="text" name="email" id="email" size="30" value="" onchange="updateEmail()"/>
+                </div>
 
                 <div class="clearMe">
                     <div class="div-zip">
-                       
                         <input placeholder="Zip Code" type="text" name="zip" id="zip" size="30" value="" />
                     </div>
                     <div class="div-coupon_submit">
