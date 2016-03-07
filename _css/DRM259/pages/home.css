@@ -357,11 +357,11 @@ body.home .greenbox input[type="text"] {
   margin: 10px 0 0 5px;
 }
 
-.div-email {
+/*.div-email {
   position: relative;
   overflow: auto;
   zoom: 1;
-}
+}*/
 
 .emailWrapper {
   padding-bottom: 10px;
