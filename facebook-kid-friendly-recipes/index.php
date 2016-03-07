@@ -70,7 +70,7 @@ $bodyClass = "home"
 						<a href="http://www.dreamfieldsfoods.com/healthy-pasta-recipes/2010/09/stove-top-mac-n-cheese.html" target="_blank">
 						<img src="../_img/DRM080/DRM080_Kids_recipe1.jpg" alt="Creamy Stove Top Cauliflower Mac n Cheese">
 						</a>
-					  <p class="fiber">Dreamfields contains a prebiotic fiber which helps promote healthy digestion.</p>
+					  <p class="fiber">We add a prebiotic fiber, inulin, sourced from chicory root. Inulin helps promote healthy digestion.</p>
                       <a href="http://www.dreamfieldsfoods.com/healthy-pasta-recipes/2010/09/stove-top-mac-n-cheese.html" target="_blank" class="btn-blue">Get Recipe<span class="arrow"></span></a>
 					</div>
 	
@@ -80,7 +80,7 @@ $bodyClass = "home"
 						<a href="http://www.dreamfieldsfoods.com/healthy-pasta-recipes/2008/12/rotini-with-ground-beef-spinach.html" target="_blank">
 						<img src="../_img/DRM080/DRM080_Kids_recipe2.jpg" alt="Rotini with Ground Beef n Spinach">
 						</a>
-						<p>Dreamfields helps you feel full longer with 7 grams of protein and 5 grams of fiber.</p>
+						<p>7 grams of protein per serving. This is natural occurring protein in our quality durum wheat.</p>
                         <div><a href="http://www.dreamfieldsfoods.com/healthy-pasta-recipes/2008/12/rotini-with-ground-beef-spinach.html" target="_blank" class="btn-blue">Get Recipe<span class="arrow"></span></a></div>
 					</div>
 	
@@ -90,7 +90,8 @@ $bodyClass = "home"
 						<a href="http://www.dreamfieldsfoods.com/healthy-pasta-recipes/2014/04/creamy-carrot-and-parm-pasta.html" target="_blank">
 						<img src="../_img/DRM080/DRM080_Kids_recipe3.jpg" alt="Creamy Carrot &amp; Parmesan">
 						</a>
-						<p class="taste">Enjoy the traditional taste and texture of pasta in a variety of dishes. Dreamfields is available in 7 different shapes.</p>
+						<p class="taste">Get the same taste and texture of traditional pasta with Dreamfields.<br /><br />
+						</p>
                         
                         <a href="http://www.dreamfieldsfoods.com/healthy-pasta-recipes/2014/04/creamy-carrot-and-parm-pasta.html" target="_blank" class="btn-blue">Get Recipe<span class="arrow"></span></a>
 					</div>

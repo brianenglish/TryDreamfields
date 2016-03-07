@@ -357,12 +357,6 @@ body.home .greenbox input[type="text"] {
   margin: 10px 0 0 5px;
 }
 
-/*.div-email {
-  position: relative;
-  overflow: auto;
-  zoom: 1;
-}*/
-
 .emailWrapper {
   padding-bottom: 10px;
 }
@@ -374,18 +368,6 @@ body.home .greenbox input[type="text"] {
 input.error {
     border-left: red 10px solid !important;
 }
-
-/*.customValidationZip {
-  position: absolute;
-  top: 0;
-  width: 6px;
-  height: 40px;
-  background: red;
-  z-index: 100;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-}*/
 
 @media only screen and (min-width: 325px) {
     .error {

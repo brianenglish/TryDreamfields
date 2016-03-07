@@ -58,7 +58,7 @@ $bodyClass = "home"
 						<a href="http://www.dreamfieldsfoods.com/healthy-pasta-recipes/2009/03/penne-with-greens-and-cannellini-beans.html" target="_blank">
 						<img src="../_img/DRM080/DRM080_recipe1.jpg" alt="Penne with Tomatoes &amp; Olives">
 						</a>
-					  <p class="fiber">Dreamfields contains a prebiotic fiber which helps promote healthy digestion.</p>
+					  <p class="fiber">We add a prebiotic fiber, inulin, sourced from chicory root. Inulin helps promote healthy digestion.</p>
                       <a href="http://www.dreamfieldsfoods.com/healthy-pasta-recipes/2009/03/penne-with-greens-and-cannellini-beans.html" target="_blank" class="btn-blue">Get Recipe<span class="arrow"></span></a>
 					</div>
 	
@@ -68,7 +68,7 @@ $bodyClass = "home"
 						<a href="http://www.dreamfieldsfoods.com/healthy-pasta-recipes/2012/04/thai-style-curry-beef-pasta.html" target="_blank">
 						<img src="../_img/DRM080/DRM080_recipe2.jpg" alt="Thai-style Curry Beef &amp; Pasta">
 						</a>
-						<p>Dreamfields helps you feel full longer with 7 grams of protein and 5 grams of fiber.</p>
+						<p>7 grams of protein per serving. This is natural occurring protein in our quality durum wheat.</p>
                         <div><a href="http://www.dreamfieldsfoods.com/healthy-pasta-recipes/2012/04/thai-style-curry-beef-pasta.html" target="_blank" class="btn-blue">Get Recipe<span class="arrow"></span></a></div>
 					</div>
 	
@@ -78,7 +78,7 @@ $bodyClass = "home"
 						<a href="http://www.dreamfieldsfoods.com/healthy-pasta-recipes/2014/02/garden-market-pasta-salad-with-smoked-trout.html" target="_blank">
 						<img src="../_img/DRM080/DRM080_recipe3.jpg" alt="Garden Market Pasta Salad with Smoked Trout">
 						</a>
-						<p class="taste">Enjoy the traditional taste and texture of pasta in a variety of dishes. Dreamfields is available in 7 different shapes.</p>
+						<p class="taste">Get the same taste and texture of traditional pasta with Dreamfields.<br /><br /></p>
                         
                         <a href="http://www.dreamfieldsfoods.com/healthy-pasta-recipes/2014/02/garden-market-pasta-salad-with-smoked-trout.html" target="_blank" class="btn-blue">Get Recipe<span class="arrow"></span></a>
 					</div>
