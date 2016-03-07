@@ -83,9 +83,7 @@
                 
                 
 
-                <div class="div-email">
-                   
-                </div>
+               
                  <div class="emailWrapper">
                         <input placeholder="Enter E-mail Address" type="text" name="email" id="email" size="30" value="" onchange="updateEmail()"/>
                     </div>
