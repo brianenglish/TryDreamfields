@@ -124,5 +124,14 @@ $bodyClass = "home";
 
 <?php include('_includes/DRM259/footer.php'); ?>	
 </div>
+
+<script>
+  $(function () {
+    $(".div-coupon_submit button").click(function () {
+      // do some rocketfuel stuff
+
+    });
+  });
+</script>
 </body>
 </html>
