@@ -1,0 +1,131 @@
+.thumbnail .brownLines {
+  margin-bottom: 60px;
+}
+
+.outer_greenbox {
+  position: relative;
+  width: 100%;
+  top: auto;
+  right:auto;
+  margin: 0;
+}
+
+.greenbox {
+  padding: 30px;
+}
+
+/*.form_disclaimer {
+  clear: both;
+}*/
+
+.flexWrapper >#form {
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .flexWrapper {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+  }
+
+  .flexWrapper >img {
+    -webkit-order: 1;
+    -moz-order: 1;
+    -ms-order: 1;
+    -o-order: 1;
+    order: 1;
+  }
+
+  .flexWrapper >#form {
+    margin-top: 20px;
+  }
+}
+
+
+
+.pinterestFormHeadline {
+  width: calc(100% - 40px);
+  margin: 20px;
+}
+
+.recipeWrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.recipeWrapper .column {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+@media only screen and (min-width: 450px) {
+  .recipeWrapper .column {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .recipeWrapper .column {
+    width: 33.33333%;
+  }
+
+  .recipeWrapper .column.pinterestWrapper {
+    width: 66.66666%;
+  }
+}
+
+.recipeWrapper .column .imageWrapper {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.recipeWrapper .column .imageWrapper .recipeOverlay {
+  background-color: rgba(0,0,0,0.6);
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: #f9f3e8;
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  height: 60px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+
+}
+
+.recipeWrapper .column .imageWrapper >span {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.recipeWrapper .column .btn-blue {
+  display: table;
+  width: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+}
