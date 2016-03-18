@@ -127,9 +127,14 @@ $bodyClass = "home";
 
 <script>
   $(function () {
-    $(".div-coupon_submit button").click(function () {
-      // do some rocketfuel stuff
-
+    $("#subscribeForm").submit(function () {
+      if ($(this).valid()) {
+        // do some rocketfuel stuff
+        $.ajax({
+          url: 'http://20723946p.rfihub.com/ca.gif?rb=24704&ca=20723946&_o=24704&_t=20723946&rd=http://www.trydreamfields.com/coupon-thanks.php'
+        });
+      }
+     
     });
   });
 </script>
