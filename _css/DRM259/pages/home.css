@@ -372,7 +372,7 @@ input.error {
 .topNavContainer {
   display: none;
   font-weight: bold;
-}
+ }
 
 @media only screen and (min-width: 325px) {
     .error {
@@ -516,12 +516,16 @@ input.error {
 
 @media only screen and (min-width: 768px) {
 
-  .topNavContainer {
+  .site_body {
     position: relative;
+  }
+
+  .topNavContainer {
+    position: absolute;
     top: 20px;
     left: 310px;
     display: inline;
-    width: 500px;
+    
   }
 
   .topNavContainer ul li{
@@ -615,11 +619,11 @@ input.error {
 
 .topNavContainer {
     
-    position: relative;
+    position: absolute;
     top: 20px;
     left: 340px;
     display: inline;
-    width: 500px;
+    
    }
 }
 
@@ -627,11 +631,11 @@ input.error {
 
 .topNavContainer {
     
-    position: relative;
+    position: absolute;
     top: 20px;
     left: 413px;
     display: inline;
-    width: 500px;
+    
    }
 }
 
@@ -639,11 +643,11 @@ input.error {
 
 .topNavContainer {
     
-    position: relative;
+    position: absolute;
     top: 20px;
     left: 495px;
     display: inline;
-    width: 500px;
+    
    }
 }
 
@@ -651,11 +655,11 @@ input.error {
 
 .topNavContainer {
     
-    position: relative;
+    position: absolute;
     top: 20px;
     left: 535px;
     display: inline;
-    width: 500px;
+    
    }
 }
 
@@ -663,11 +667,11 @@ input.error {
 
 .topNavContainer {
     
-    position: relative;
+    position: absolute;
     top: 20px;
     left: 600px;
     display: inline;
-    width: 500px;
+    
    }
 }
 
@@ -675,11 +679,11 @@ input.error {
 
 .topNavContainer {
     
-    position: relative;
+    position: absolute;
     top: 20px;
     left: 645px;
     display: inline;
-    width: 500px;
+    
    }
 }
 
@@ -687,11 +691,11 @@ input.error {
 
 .topNavContainer {
     
-    position: relative;
+    position: absolute;
     top: 20px;
     left: 660px;
     display: inline;
-    width: 500px;
+    
    }
 }
 
@@ -699,11 +703,23 @@ input.error {
 
 .topNavContainer {
     
-    position: relative;
+    position: absolute;
     top: 20px;
     left: 715px;
     display: inline;
-    width: 500px;
+    
+   }
+}
+
+@media only screen and (min-width: 1440px) {
+
+.topNavContainer {
+    
+    position: absolute;
+    top: 20px;
+    left: 743px;
+    display: inline;
+    
    }
 }
 
@@ -711,11 +727,11 @@ input.error {
 
 .topNavContainer {
     
-    position: relative;
+    position: absolute;
     top: 20px;
     left: 822px;
     display: inline;
-    width: 500px;
+    
    }
 }
 
@@ -723,11 +739,11 @@ input.error {
 
 .topNavContainer {
     
-    position: relative;
+    position: absolute;
     top: 20px;
     left: 965px;
     display: inline;
-    width: 500px;
+    
    }
 }
 
