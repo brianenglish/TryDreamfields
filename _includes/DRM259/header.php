@@ -117,7 +117,14 @@ if ( $flexslider === true ) {
 	$googleMap = ( isset($googleMap) ) ? $googleMap : "" ;
 	echo ( $googleMap == true ) ? "onLoad=\"load()\" onUnload=\"GUnload()\"" : ""; 
 ?>>
-	
+	<div class="topNavContainer">
+		<ul>
+			<li>Home&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+			<li>About Dreamfields Pasta&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+			<li>Find a Store&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+			<li>Recipes</li>
+		</ul>
+	</div>
 	<div class="container">
       
         <header class="site_header" role="banner">

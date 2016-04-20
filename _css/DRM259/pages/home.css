@@ -369,6 +369,11 @@ input.error {
     border-left: red 10px solid !important;
 }
 
+.topNavContainer {
+  display: none;
+  font-weight: bold;
+}
+
 @media only screen and (min-width: 325px) {
     .error {
         top: 87px;
@@ -494,6 +499,7 @@ input.error {
     font-weight: bold;
   }
 }
+
 @media only screen and (min-width: 640px) {
   .ca_1 {
     padding: 0 30px 30px 30px;
@@ -507,7 +513,21 @@ input.error {
     margin: 0 auto;
   }
 }
+
 @media only screen and (min-width: 768px) {
+
+  .topNavContainer {
+    position: relative;
+    top: 20px;
+    left: 310px;
+    display: inline;
+    width: 500px;
+  }
+
+  .topNavContainer ul li{
+    list-style-type: none;
+    display: inline;
+  }
 
   #unsubChk {
   
@@ -590,6 +610,132 @@ input.error {
     margin: 0;
   }
 }
+
+@media only screen and (min-width: 800px) {
+
+.topNavContainer {
+    
+    position: relative;
+    top: 20px;
+    left: 340px;
+    display: inline;
+    width: 500px;
+   }
+}
+
+@media only screen and (min-width: 875px) {
+
+.topNavContainer {
+    
+    position: relative;
+    top: 20px;
+    left: 413px;
+    display: inline;
+    width: 500px;
+   }
+}
+
+@media only screen and (min-width: 960px) {
+
+.topNavContainer {
+    
+    position: relative;
+    top: 20px;
+    left: 495px;
+    display: inline;
+    width: 500px;
+   }
+}
+
+@media only screen and (min-width: 1024px) {
+
+.topNavContainer {
+    
+    position: relative;
+    top: 20px;
+    left: 535px;
+    display: inline;
+    width: 500px;
+   }
+}
+
+@media only screen and (min-width: 1150px) {
+
+.topNavContainer {
+    
+    position: relative;
+    top: 20px;
+    left: 600px;
+    display: inline;
+    width: 500px;
+   }
+}
+
+@media only screen and (min-width: 1250px) {
+
+.topNavContainer {
+    
+    position: relative;
+    top: 20px;
+    left: 645px;
+    display: inline;
+    width: 500px;
+   }
+}
+
+@media only screen and (min-width: 1280px) {
+
+.topNavContainer {
+    
+    position: relative;
+    top: 20px;
+    left: 660px;
+    display: inline;
+    width: 500px;
+   }
+}
+
+@media only screen and (min-width: 1400px) {
+
+.topNavContainer {
+    
+    position: relative;
+    top: 20px;
+    left: 715px;
+    display: inline;
+    width: 500px;
+   }
+}
+
+@media only screen and (min-width: 1600px) {
+
+.topNavContainer {
+    
+    position: relative;
+    top: 20px;
+    left: 822px;
+    display: inline;
+    width: 500px;
+   }
+}
+
+@media only screen and (min-width: 1900px) {
+
+.topNavContainer {
+    
+    position: relative;
+    top: 20px;
+    left: 965px;
+    display: inline;
+    width: 500px;
+   }
+}
+
+
+
+
+
+
 .lt-ie9 .greenbox {
   width: 100%;
   height: auto;
@@ -806,3 +952,4 @@ input.error {
 .lt-ie8 .btn-white SPAN.arrow {
   top: 0px;
 }
+
